@@ -1,0 +1,79 @@
+{
+  "candidate_id": "b001s03",
+  "candidate_email": "b001s03@training.turingiq.ai",
+  "ticket_id": "BAT-59",
+  "ticket_type": "mcq",
+  "title": "[MCQ] Assessment \u2014 B001S03",
+  "submission_timestamp": "2026-09-08T10:02:13.379Z",
+  "grading_completed_timestamp": "2026-09-08T10:02:15.812867+00:00",
+  "score": 70,
+  "max_score": 100,
+  "passed_tests": 7,
+  "total_tests": 10,
+  "execution_status": "success",
+  "result": "pass",
+  "feedback": "MCQ score: 7/10 answered correctly.",
+  "test_case_results": [
+    {
+      "question_no": "1",
+      "submitted": "C",
+      "expected": "C",
+      "passed": true
+    },
+    {
+      "question_no": "2",
+      "submitted": "C",
+      "expected": "B",
+      "passed": false
+    },
+    {
+      "question_no": "3",
+      "submitted": "C",
+      "expected": "C",
+      "passed": true
+    },
+    {
+      "question_no": "4",
+      "submitted": "C",
+      "expected": "C",
+      "passed": true
+    },
+    {
+      "question_no": "5",
+      "submitted": "A",
+      "expected": "A",
+      "passed": true
+    },
+    {
+      "question_no": "6",
+      "submitted": "B",
+      "expected": "B",
+      "passed": true
+    },
+    {
+      "question_no": "7",
+      "submitted": "A",
+      "expected": "A",
+      "passed": true
+    },
+    {
+      "question_no": "8",
+      "submitted": "C",
+      "expected": "C",
+      "passed": true
+    },
+    {
+      "question_no": "9",
+      "submitted": "A",
+      "expected": "B",
+      "passed": false
+    },
+    {
+      "question_no": "10",
+      "submitted": "C",
+      "expected": "B",
+      "passed": false
+    }
+  ],
+  "ai_review": null
+}
