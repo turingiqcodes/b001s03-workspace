@@ -6,6 +6,7 @@ def count_positive_negative(numbers):
     while i<len(numbers):
         if numbers[i]>0:
             positive_count+=1
+            print(numbers[i])
         else:
             negative_count+=1
         i+=1
