@@ -20,16 +20,25 @@ import psycopg2
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 
+try:
+    from airflow.sdk import BaseHook  # Airflow 3
+except ImportError:
+    from airflow.hooks.base import BaseHook  # Airflow 2
+
 log = logging.getLogger(__name__)
 
-RAW_DIR = "/home/training/pipeline-data/raw"
-AUTHORS_CSV = f"{RAW_DIR}/new_authors.csv"
+DAG_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# The CSV is shipped with the DAG in dags/data/ so the Airflow server can read it.
+AUTHORS_CSV = os.path.join(DAG_DIR, "data", "new_authors.csv")
 
 # SQL files live next to this DAG in dags/sql/
-SQL_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sql")
+SQL_DIR = os.path.join(DAG_DIR, "sql")
 INSERT_PUBLIC_SQL = os.path.join(SQL_DIR, "b001s03_insert_authors_public.sql")
 
-# Same connection pgAdmin uses; the password is read from ~/.pgpass by libpq.
+# The password is not stored here. It is read from the Airflow Connection
+# DB_CONN_ID (Admin -> Connections in the Airflow UI) when a task connects.
+DB_CONN_ID = "pubs_b001s03"
 DB_CONFIG = {
     "host": "turingiq-training-rds-pubs-b001.cx0ywsig8do8.us-east-1.rds.amazonaws.com",
     "port": 5432,
@@ -39,6 +48,13 @@ DB_CONFIG = {
 }
 
 AUTHOR_COLUMNS = "au_id, au_lname, au_fname, phone, address, city, state, zip, contract"
+
+
+def connect_db():
+    password = BaseHook.get_connection(DB_CONN_ID).password
+    if not password:
+        raise ValueError(f"Airflow Connection '{DB_CONN_ID}' has no password set")
+    return psycopg2.connect(**DB_CONFIG, password=password)
 
 
 def log_task_success(context):
@@ -66,7 +82,7 @@ def start_pipeline(**context):
 def insert_into_stage():
     log.info("Connecting to %s as %s", DB_CONFIG["dbname"], DB_CONFIG["user"])
     try:
-        conn = psycopg2.connect(**DB_CONFIG)
+        conn = connect_db()
     except Exception:
         log.exception("Could not connect to the database")
         raise
@@ -103,7 +119,7 @@ def insert_into_public():
 
     log.info("Connecting to %s as %s", DB_CONFIG["dbname"], DB_CONFIG["user"])
     try:
-        conn = psycopg2.connect(**DB_CONFIG)
+        conn = connect_db()
     except Exception:
         log.exception("Could not connect to the database")
         raise
