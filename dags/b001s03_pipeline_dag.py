@@ -5,6 +5,8 @@ start -> insert_into_stage -> insert_into_public -> end
 
 1. insert_into_stage: load new_authors.csv into stage.authors
    (the stage table is emptied first, so re-running does not duplicate rows).
+   The lab CSV folder is not mounted on the Airflow server, so when the file is
+   missing the copy embedded below (AUTHORS_CSV_DATA) is loaded instead.
 2. insert_into_public: copy the rows now in stage.authors into public.authors
    (existing au_ids are updated). The SQL is INSERT_PUBLIC_SQL below.
 
@@ -15,7 +17,9 @@ Logging: every task writes its steps to the Airflow task log, and every task
 logs a SUCCESS or FAILED summary when it finishes (see the callbacks below).
 Failures are logged with the full error before the task is marked failed.
 """
+import io
 import logging
+import os
 from datetime import datetime
 
 import psycopg2
@@ -31,6 +35,23 @@ log = logging.getLogger(__name__)
 
 RAW_DIR = "/home/training/pipeline-data/raw"
 AUTHORS_CSV = f"{RAW_DIR}/new_authors.csv"
+
+# Copy of new_authors.csv, used when AUTHORS_CSV does not exist on the Airflow server.
+AUTHORS_CSV_DATA = """\
+au_id,au_lname,au_fname,phone,address,city,state,zip,contract
+900-67-4743,Verma,Priya,877 825-9068,5686 River Rd.,Boise,ID,40594,false
+901-41-2703,Pillai,Ravi,654 313-2639,2755 Oak Ave.,Boise,ID,37303,false
+902-92-4484,Rao,Neha,886 206-4770,3489 Main St.,Reno,NV,39863,true
+903-62-1384,Nair,Anjali,505 729-9672,537 River Rd.,Reno,NV,91883,true
+904-96-4785,Kapoor,Meera,431 912-4278,6226 River Rd.,Reno,NV,14476,true
+905-56-2072,Gupta,Meera,652 741-7475,416 Main St.,Tempe,AZ,76985,true
+906-55-9137,Desai,Neha,217 953-2809,7110 River Rd.,Raleigh,NC,29329,false
+907-39-9623,Iyer,Rohan,653 475-9972,3414 River Rd.,Boise,ID,71943,false
+908-68-8983,Reddy,Anjali,834 391-6145,9248 River Rd.,Portland,OR,51895,false
+909-24-3175,Pillai,Rohan,881 360-6374,277 River Rd.,Raleigh,NC,60177,false
+910-70-8036,Desai,Rohan,493 387-4668,8371 River Rd.,Austin,TX,21994,false
+911-49-5577,Gupta,Pooja,884 968-7134,5943 Main St.,Madison,WI,78906,true
+"""
 
 # Same statement as dags/sql/b001s03_insert_authors_public.sql; keep them in sync.
 INSERT_PUBLIC_SQL = """
@@ -106,8 +127,13 @@ def insert_into_stage():
             log.info("Truncating stage.authors")
             cur.execute("TRUNCATE TABLE stage.authors")
 
-            log.info("Loading %s into stage.authors", AUTHORS_CSV)
-            with open(AUTHORS_CSV) as f:
+            if os.path.exists(AUTHORS_CSV):
+                log.info("Loading %s into stage.authors", AUTHORS_CSV)
+                f = open(AUTHORS_CSV)
+            else:
+                log.warning("%s not found; loading the CSV embedded in the DAG instead", AUTHORS_CSV)
+                f = io.StringIO(AUTHORS_CSV_DATA)
+            with f:
                 cur.copy_expert(
                     f"COPY stage.authors ({AUTHOR_COLUMNS}) FROM STDIN WITH (FORMAT csv, HEADER true)",
                     f,
