@@ -5,15 +5,17 @@ start -> insert_into_stage -> insert_into_public -> end
 
 1. insert_into_stage: load new_authors.csv into stage.authors
    (the stage table is emptied first, so re-running does not duplicate rows).
-2. insert_into_public: run sql/b001s03_insert_authors_public.sql, which copies
-   the rows now in stage.authors into public.authors (existing au_ids are updated).
+2. insert_into_public: copy the rows now in stage.authors into public.authors
+   (existing au_ids are updated). The SQL is INSERT_PUBLIC_SQL below.
+
+submit_dag.sh uploads only this one file to Airflow, so the DAG must not depend
+on other files next to it.
 
 Logging: every task writes its steps to the Airflow task log, and every task
 logs a SUCCESS or FAILED summary when it finishes (see the callbacks below).
 Failures are logged with the full error before the task is marked failed.
 """
 import logging
-import os
 from datetime import datetime
 
 import psycopg2
@@ -27,14 +29,26 @@ except ImportError:
 
 log = logging.getLogger(__name__)
 
-DAG_DIR = os.path.dirname(os.path.abspath(__file__))
+RAW_DIR = "/home/training/pipeline-data/raw"
+AUTHORS_CSV = f"{RAW_DIR}/new_authors.csv"
 
-# The CSV is shipped with the DAG in dags/data/ so the Airflow server can read it.
-AUTHORS_CSV = os.path.join(DAG_DIR, "data", "new_authors.csv")
-
-# SQL files live next to this DAG in dags/sql/
-SQL_DIR = os.path.join(DAG_DIR, "sql")
-INSERT_PUBLIC_SQL = os.path.join(SQL_DIR, "b001s03_insert_authors_public.sql")
+# Same statement as dags/sql/b001s03_insert_authors_public.sql; keep them in sync.
+INSERT_PUBLIC_SQL = """
+-- Copy the authors loaded into stage.authors into public.authors.
+-- Authors that already exist (same au_id) are updated to match stage.
+INSERT INTO public.authors (au_id, au_lname, au_fname, phone, address, city, state, zip, contract)
+SELECT au_id, au_lname, au_fname, phone, address, city, state, zip, contract
+FROM stage.authors
+ON CONFLICT (au_id) DO UPDATE SET
+    au_lname = EXCLUDED.au_lname,
+    au_fname = EXCLUDED.au_fname,
+    phone    = EXCLUDED.phone,
+    address  = EXCLUDED.address,
+    city     = EXCLUDED.city,
+    state    = EXCLUDED.state,
+    zip      = EXCLUDED.zip,
+    contract = EXCLUDED.contract
+"""
 
 # The password is not stored here. It is read from the Airflow Connection
 # DB_CONN_ID (Admin -> Connections in the Airflow UI) when a task connects.
@@ -109,14 +123,6 @@ def insert_into_stage():
 
 
 def insert_into_public():
-    log.info("Reading SQL file %s", INSERT_PUBLIC_SQL)
-    try:
-        with open(INSERT_PUBLIC_SQL) as f:
-            sql = f.read()
-    except Exception:
-        log.exception("Could not read SQL file %s", INSERT_PUBLIC_SQL)
-        raise
-
     log.info("Connecting to %s as %s", DB_CONFIG["dbname"], DB_CONFIG["user"])
     try:
         conn = connect_db()
@@ -127,7 +133,7 @@ def insert_into_public():
     try:
         with conn, conn.cursor() as cur:
             log.info("Running insert from stage.authors into public.authors")
-            cur.execute(sql)
+            cur.execute(INSERT_PUBLIC_SQL)
             log.info("Inserted/updated %s rows in public.authors", cur.rowcount)
             cur.execute("SELECT count(*) FROM public.authors")
             log.info("public.authors now has %s rows", cur.fetchone()[0])
