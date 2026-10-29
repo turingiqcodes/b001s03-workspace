@@ -1,0 +1,62 @@
+#!/bin/bash
+# Runs once at first boot: installs Airflow and starts it against the RDS Postgres metadata database.
+# No "set -x" so the passwords are not written to the logs.
+set -euo pipefail
+exec > >(tee -a /var/log/airflow-setup.log) 2>&1
+
+export DEBIAN_FRONTEND=noninteractive
+apt-get update -y
+apt-get install -y python3-venv python3-pip postgresql-client
+
+useradd --create-home --shell /bin/bash airflow || true
+
+cat > /etc/airflow.env <<EOF
+AIRFLOW_HOME=/home/airflow/airflow
+AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://${db_username}:${db_password}@${db_host}:${db_port}/${db_name}
+AIRFLOW__CORE__EXECUTOR=LocalExecutor
+AIRFLOW__CORE__LOAD_EXAMPLES=True
+AIRFLOW__WEBSERVER__WORKERS=2
+EOF
+chown root:airflow /etc/airflow.env
+chmod 640 /etc/airflow.env
+
+sudo -u airflow python3 -m venv /home/airflow/venv
+sudo -u airflow /home/airflow/venv/bin/pip install --upgrade pip
+sudo -u airflow /home/airflow/venv/bin/pip install "apache-airflow[postgres]==${airflow_version}" \
+  --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-${airflow_version}/constraints-3.10.txt"
+
+until pg_isready -h ${db_host} -p ${db_port}; do
+  echo "Waiting for the database..."
+  sleep 10
+done
+
+set -a
+source /etc/airflow.env
+set +a
+sudo -E -u airflow /home/airflow/venv/bin/airflow db migrate
+sudo -E -u airflow /home/airflow/venv/bin/airflow users create \
+  --username ${admin_username} --password ${admin_password} \
+  --role Admin --firstname Airflow --lastname Admin --email admin@example.com
+
+for component in webserver scheduler; do
+  cat > /etc/systemd/system/airflow-$component.service <<EOF
+[Unit]
+Description=Airflow $component
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=airflow
+EnvironmentFile=/etc/airflow.env
+ExecStart=/home/airflow/venv/bin/airflow $component
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+EOF
+done
+
+systemctl daemon-reload
+systemctl enable --now airflow-webserver airflow-scheduler
+echo "Airflow setup finished"

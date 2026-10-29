@@ -1,1 +1,4 @@
-{"python.defaultInterpreterPath":"/opt/turingiq-venv/bin/python3"}
+{
+    "python.defaultInterpreterPath": "/opt/turingiq-venv/bin/python3",
+    "python.terminal.useEnvFile": true
+}

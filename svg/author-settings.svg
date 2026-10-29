@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" font-family="'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="st-title">
+  <title id="st-title">Digital Library – Settings</title>
+  <rect width="1200" height="800" fill="#eef6f1"/>
+  <!-- header -->
+  <rect width="1200" height="80" fill="#ffffff"/>
+  <path d="M0 80.5h1200" stroke="#e4e7e5"/>
+  <rect x="24" y="22" width="36" height="36" rx="9" fill="#1f4d3a"/>
+  <path d="M42 33c-3-2-7-2.6-10-2.4v16c3-.2 7 .4 10 2.4 3-2 7-2.6 10-2.4v-16c-3-.2-7 .4-10 2.4z" fill="#ffffff"/>
+  <path d="M42 33v16" stroke="#1f4d3a" stroke-width="1.5"/>
+  <text x="72" y="47" font-size="21" font-weight="700" fill="#1f2a24">Digital Library</text>
+  <rect x="250" y="20" width="540" height="40" rx="10" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <g transform="translate(264 30)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="6"/><path d="M13 13l5 5"/></g>
+  <text x="294" y="45" font-size="15" fill="#7a837e">Search the library</text>
+  <rect x="802" y="20" width="104" height="40" rx="10" fill="#ffffff" stroke="#e4e7e5"/>
+  <g transform="translate(818 30)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h8M15 5h2M3 10h2M9 10h8M3 15h10"/><circle cx="13" cy="5" r="2"/><circle cx="7" cy="10" r="2"/><circle cx="15" cy="15" r="2"/></g>
+  <text x="846" y="45" font-size="15" font-weight="600" fill="#1f2a24">Filter</text>
+  <!-- theme toggle -->
+  <rect x="958" y="22" width="84" height="36" rx="18" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <circle cx="978" cy="40" r="14" fill="#1f4d3a"/>
+  <g stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"><circle cx="978" cy="40" r="4" fill="none"/><path d="M978 31.5v2M978 46.5v2M969.5 40h2M984.5 40h2M972 34l1.4 1.4M982.6 44.6L984 46M972 46l1.4-1.4M982.6 35.4L984 34"/></g>
+  <path d="M1026 33a7 7 0 1 0 6 10.5 5.6 5.6 0 0 1-6-10.5z" fill="none" stroke="#7a837e" stroke-width="1.6" stroke-linejoin="round"/>
+  <!-- profile -->
+  <path d="M1058 24v32" stroke="#e4e7e5"/>
+  <circle cx="1090" cy="40" r="18" fill="#dcefe5"/>
+  <circle cx="1090" cy="35" r="6" fill="#1f4d3a"/><path d="M1078.5 51a12 9 0 0 1 23 0" fill="#1f4d3a"/>
+  <circle cx="1090" cy="40" r="18" fill="none" stroke="#a8cbb8" stroke-width="1.5"/>
+  <text x="1116" y="45" font-size="15" font-weight="600" fill="#1f2a24">Author</text>
+  <g transform="translate(1166 31)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8l4 4 4-4"/></g>
+  <!-- sidebar (author) -->
+  <rect x="0" y="81" width="210" height="719" rx="0" fill="#ffffff"/>
+  <path d="M210.5 81v719" stroke="#e4e7e5"/>
+  <text x="28" y="118" font-size="11" font-weight="700" fill="#7a837e" letter-spacing="1.2">MENU</text>
+  <g transform="translate(28 147)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 5C8 3.5 5.5 3 3 3v12c2.5 0 5 .5 7 2 2-1.5 4.5-2 7-2V3c-2.5 0-5 .5-7 2z"/><path d="M10 5v12"/></g>
+  <text x="60" y="162" font-size="15" font-weight="500" fill="#1f2a24">My Books</text>
+  <g transform="translate(28 193)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 17.5h16M3.5 17.5V4h3v13.5M6.5 17.5V6h3v11.5M11 17.5l-1.2-11 3-.4 1.2 11M15 17.5V5h2.5v12.5"/></g>
+  <text x="60" y="208" font-size="15" font-weight="500" fill="#1f2a24">Library</text>
+  <g transform="translate(28 239)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 4v12M4 10h12"/></g>
+  <text x="60" y="254" font-size="15" font-weight="500" fill="#1f2a24">Add Book</text>
+  <g transform="translate(28 285)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="7" r="3.5"/><path d="M3 18c0-3.9 3.1-6.5 7-6.5s7 2.6 7 6.5"/></g>
+  <text x="60" y="300" font-size="15" font-weight="500" fill="#1f2a24">My Profile</text>
+  <g transform="translate(28 331)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><path d="M1 17c0-3 2.7-5 6-5s6 2 6 5"/><circle cx="14.5" cy="6" r="2.5"/><path d="M15 11c2.5 0 4.5 1.6 4.5 4.5"/></g>
+  <text x="60" y="346" font-size="15" font-weight="500" fill="#1f2a24">Community</text>
+  <g transform="translate(28 377)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2L4 11h6l-1 7 7-9h-6z"/></g>
+  <text x="60" y="392" font-size="15" font-weight="500" fill="#1f2a24">AI Intelligence</text>
+  <g transform="translate(172 377)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8l4 4 4-4"/></g>
+  <path d="M14 656.5h182" stroke="#e4e7e5"/>
+  <rect x="14" y="665" width="182" height="42" rx="8" fill="#dcefe5"/>
+  <rect x="0" y="671" width="4" height="30" rx="2" fill="#1f4d3a"/>
+  <g transform="translate(28 676)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="2.6"/><circle cx="10" cy="10" r="6.5"/><path d="M10 1v2M10 17v2M1 10h2M17 10h2M3.6 3.6l1.4 1.4M15 15l1.4 1.4M3.6 16.4L5 15M15 5l1.4-1.4"/></g>
+  <text x="60" y="691" font-size="15" font-weight="600" fill="#1f4d3a">Settings</text>
+  <g transform="translate(28 722)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"/><path d="M7.6 7.8a2.5 2.5 0 1 1 3.4 2.4c-.7.3-1 .8-1 1.6"/><path d="M10 14.6v.1"/></g>
+  <text x="60" y="737" font-size="15" font-weight="500" fill="#1f2a24">Help</text>
+  <!-- heading -->
+  <g transform="translate(240 112)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 10H4M9 5l-5 5 5 5"/></g>
+  <text x="272" y="129" font-size="22" font-weight="700" fill="#1f2a24">Settings</text>
+  <text x="1168" y="128" font-size="13" text-anchor="end" fill="#7a837e">Charlene Locksley  /  <tspan fill="#1f4d3a" font-weight="600">Settings</tspan></text>
+  <text x="240" y="156" font-size="14" fill="#7a837e">How the library looks for you, and your sign-in.</text>
+  <!-- appearance -->
+  <rect x="240" y="180" width="452" height="258" rx="14" fill="#ffffff" stroke="#e4e7e5"/>
+  <rect x="264" y="196" width="32" height="32" rx="8" fill="#eef6f1"/>
+  <g transform="translate(270 202) scale(0.9)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="3.5"/><path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M4 16l1.4-1.4M14.6 5.4L16 4"/></g>
+  <text x="308" y="218" font-size="15" font-weight="700" fill="#1f2a24">Appearance</text>
+  <text x="414.0" y="218" font-size="12" fill="#7a837e">Saved in this browser</text>
+  <rect x="264" y="244" width="128" height="104" rx="12" fill="#ffffff" stroke="#1f4d3a" stroke-width="2"/>
+  <rect x="274" y="254" width="108" height="50" rx="0" fill="#eef6f1"/>
+  <rect x="274" y="254" width="28.080000000000002" height="50" rx="0" fill="#ffffff"/>
+  <rect x="312.08" y="266" width="59.92" height="9" rx="4" fill="#6cc39a" opacity=".75"/>
+  <rect x="274" y="254" width="108" height="50" rx="8" fill="none" stroke="#cfd6d2"/>
+  <g transform="translate(274 316) scale(0.8)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="3.5"/><path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M4 16l1.4-1.4M14.6 5.4L16 4"/></g>
+  <text x="296" y="330" font-size="12" font-weight="700" fill="#1f4d3a">Light</text>
+  <rect x="402" y="244" width="128" height="104" rx="12" fill="#ffffff" stroke="#e4e7e5" stroke-width="1.5"/>
+  <rect x="412" y="254" width="108" height="50" rx="0" fill="#0f1512"/>
+  <rect x="412" y="254" width="28.080000000000002" height="50" rx="0" fill="#161d19"/>
+  <rect x="450.08" y="266" width="59.92" height="9" rx="4" fill="#6cc39a" opacity=".75"/>
+  <rect x="412" y="254" width="108" height="50" rx="8" fill="none" stroke="#cfd6d2"/>
+  <g transform="translate(412 316) scale(0.8)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 12.5A7 7 0 0 1 7.5 3.5a7 7 0 1 0 9 9z"/></g>
+  <text x="434" y="330" font-size="12" font-weight="600" fill="#1f2a24">Dark</text>
+  <rect x="540" y="244" width="128" height="104" rx="12" fill="#ffffff" stroke="#e4e7e5" stroke-width="1.5"/>
+  <rect x="550" y="254" width="54.0" height="50" rx="0" fill="#eef6f1"/>
+  <rect x="604.0" y="254" width="54.0" height="50" rx="0" fill="#0f1512"/>
+  <rect x="550" y="254" width="28.080000000000002" height="50" rx="0" fill="#ffffff"/>
+  <rect x="588.08" y="266" width="59.92" height="9" rx="4" fill="#6cc39a" opacity=".75"/>
+  <rect x="550" y="254" width="108" height="50" rx="8" fill="none" stroke="#cfd6d2"/>
+  <g transform="translate(550 316) scale(0.8)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="16" height="11" rx="2"/><path d="M7 17.5h6M10 14v3.5"/></g>
+  <text x="572" y="330" font-size="12" font-weight="600" fill="#1f2a24">Match system</text>
+  <path d="M240 370.5h452" stroke="#e4e7e5"/>
+  <text x="264" y="402.0" font-size="14" font-weight="600" fill="#1f2a24">Density</text>
+  <text x="264" y="420.0" font-size="12" fill="#7a837e">Fits more rows on screen.</text>
+  <rect x="462" y="386" width="206" height="36" rx="10" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <rect x="465" y="389" width="100" height="30" rx="7" fill="#ffffff" stroke="#e4e7e5"/>
+  <text x="515.0" y="409" font-size="13" font-weight="600" text-anchor="middle" fill="#1f4d3a">Comfortable</text>
+  <text x="615.0" y="409" font-size="13" font-weight="600" text-anchor="middle" fill="#7a837e">Compact</text>
+  <rect x="240" y="454" width="452" height="64" rx="12" fill="#eef6f1"/>
+  <g transform="translate(258 476) scale(0.9)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"/><path d="M10 9v5M10 6.2v.1"/></g>
+  <text x="286" y="482" font-size="13" fill="#1f4d3a">Theme and density are kept in this browser, so</text>
+  <text x="286" y="500" font-size="13" fill="#1f4d3a">each computer you use can look the way you like.</text>
+  <!-- account -->
+  <rect x="708" y="180" width="460" height="292" rx="14" fill="#ffffff" stroke="#e4e7e5"/>
+  <rect x="732" y="196" width="32" height="32" rx="8" fill="#eef6f1"/>
+  <g transform="translate(738 202) scale(0.9)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2l6.5 2.5V9c0 4.2-2.8 7.5-6.5 9-3.7-1.5-6.5-4.8-6.5-9V4.5z"/><path d="M7 10l2.2 2.2L13.5 8"/></g>
+  <text x="776" y="218" font-size="15" font-weight="700" fill="#1f2a24">Account and security</text>
+  <path d="M708 232.5h460" stroke="#e4e7e5"/>
+  <text x="732" y="261.0" font-size="14" font-weight="600" fill="#1f2a24">Username</text>
+  <text x="1144" y="261.0" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">@clocksley</text>
+  <path d="M708 280.5h460" stroke="#e4e7e5"/>
+  <text x="732" y="309.0" font-size="14" font-weight="600" fill="#1f2a24">Role</text>
+  <text x="1144" y="309.0" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">Author</text>
+  <path d="M708 328.5h460" stroke="#e4e7e5"/>
+  <text x="732" y="357.0" font-size="14" font-weight="600" fill="#1f2a24">Login created</text>
+  <text x="1144" y="357.0" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">26 Oct 2026</text>
+  <path d="M708 376.5h460" stroke="#e4e7e5"/>
+  <text x="732" y="405.0" font-size="14" font-weight="600" fill="#1f2a24">Password</text>
+  <rect x="960" y="382" width="184" height="36" rx="8" fill="#ffffff" stroke="#e4e7e5"/>
+  <g transform="translate(974 391.0) scale(0.9)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="12" r="4"/><path d="M10 9l7-7M14 5l2.5 2.5"/></g>
+  <text x="998" y="405.0" font-size="14" font-weight="600" fill="#1f4d3a">Change password</text>
+  <path d="M708 424.5h460" stroke="#e4e7e5"/>
+  <text x="732" y="446.0" font-size="14" font-weight="600" fill="#1f2a24">Signed-in browsers</text>
+  <text x="732" y="464.0" font-size="12" fill="#7a837e">Only this browser.</text>
+  <rect x="912" y="430" width="232" height="36" rx="8" fill="#ffffff" stroke="#e4e7e5"/>
+  <g transform="translate(926 439.0) scale(0.9)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H4.5A1.5 1.5 0 0 0 3 4.5v11A1.5 1.5 0 0 0 4.5 17H8M13 6l4 4-4 4M17 10H8"/></g>
+  <text x="950" y="453.0" font-size="14" font-weight="600" fill="#1f4d3a">Sign out other browsers</text>
+</svg>

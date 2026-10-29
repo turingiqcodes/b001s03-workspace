@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" font-family="'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="pf-title">
+  <title id="pf-title">Digital Library – My Profile</title>
+  <rect width="1200" height="800" fill="#eef6f1"/>
+  <!-- header -->
+  <rect width="1200" height="80" fill="#ffffff"/>
+  <path d="M0 80.5h1200" stroke="#e4e7e5"/>
+  <rect x="24" y="22" width="36" height="36" rx="9" fill="#1f4d3a"/>
+  <path d="M42 33c-3-2-7-2.6-10-2.4v16c3-.2 7 .4 10 2.4 3-2 7-2.6 10-2.4v-16c-3-.2-7 .4-10 2.4z" fill="#ffffff"/>
+  <path d="M42 33v16" stroke="#1f4d3a" stroke-width="1.5"/>
+  <text x="72" y="47" font-size="21" font-weight="700" fill="#1f2a24">Digital Library</text>
+  <rect x="250" y="20" width="540" height="40" rx="10" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <g transform="translate(264 30)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="6"/><path d="M13 13l5 5"/></g>
+  <text x="294" y="45" font-size="15" fill="#7a837e">Search the library</text>
+  <rect x="802" y="20" width="104" height="40" rx="10" fill="#ffffff" stroke="#e4e7e5"/>
+  <g transform="translate(818 30)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h8M15 5h2M3 10h2M9 10h8M3 15h10"/><circle cx="13" cy="5" r="2"/><circle cx="7" cy="10" r="2"/><circle cx="15" cy="15" r="2"/></g>
+  <text x="846" y="45" font-size="15" font-weight="600" fill="#1f2a24">Filter</text>
+  <!-- theme toggle -->
+  <rect x="958" y="22" width="84" height="36" rx="18" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <circle cx="978" cy="40" r="14" fill="#1f4d3a"/>
+  <g stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"><circle cx="978" cy="40" r="4" fill="none"/><path d="M978 31.5v2M978 46.5v2M969.5 40h2M984.5 40h2M972 34l1.4 1.4M982.6 44.6L984 46M972 46l1.4-1.4M982.6 35.4L984 34"/></g>
+  <path d="M1026 33a7 7 0 1 0 6 10.5 5.6 5.6 0 0 1-6-10.5z" fill="none" stroke="#7a837e" stroke-width="1.6" stroke-linejoin="round"/>
+  <!-- profile -->
+  <path d="M1058 24v32" stroke="#e4e7e5"/>
+  <circle cx="1090" cy="40" r="18" fill="#dcefe5"/>
+  <circle cx="1090" cy="35" r="6" fill="#1f4d3a"/><path d="M1078.5 51a12 9 0 0 1 23 0" fill="#1f4d3a"/>
+  <circle cx="1090" cy="40" r="18" fill="none" stroke="#a8cbb8" stroke-width="1.5"/>
+  <text x="1116" y="45" font-size="15" font-weight="600" fill="#1f2a24">Author</text>
+  <g transform="translate(1166 31)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8l4 4 4-4"/></g>
+  <!-- sidebar (author) -->
+  <rect x="0" y="81" width="210" height="719" rx="0" fill="#ffffff"/>
+  <path d="M210.5 81v719" stroke="#e4e7e5"/>
+  <text x="28" y="118" font-size="11" font-weight="700" fill="#7a837e" letter-spacing="1.2">MENU</text>
+  <g transform="translate(28 147)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 5C8 3.5 5.5 3 3 3v12c2.5 0 5 .5 7 2 2-1.5 4.5-2 7-2V3c-2.5 0-5 .5-7 2z"/><path d="M10 5v12"/></g>
+  <text x="60" y="162" font-size="15" font-weight="500" fill="#1f2a24">My Books</text>
+  <g transform="translate(28 193)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 17.5h16M3.5 17.5V4h3v13.5M6.5 17.5V6h3v11.5M11 17.5l-1.2-11 3-.4 1.2 11M15 17.5V5h2.5v12.5"/></g>
+  <text x="60" y="208" font-size="15" font-weight="500" fill="#1f2a24">Library</text>
+  <g transform="translate(28 239)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 4v12M4 10h12"/></g>
+  <text x="60" y="254" font-size="15" font-weight="500" fill="#1f2a24">Add Book</text>
+  <rect x="14" y="274" width="182" height="42" rx="8" fill="#dcefe5"/>
+  <rect x="0" y="280" width="4" height="30" rx="2" fill="#1f4d3a"/>
+  <g transform="translate(28 285)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="7" r="3.5"/><path d="M3 18c0-3.9 3.1-6.5 7-6.5s7 2.6 7 6.5"/></g>
+  <text x="60" y="300" font-size="15" font-weight="600" fill="#1f4d3a">My Profile</text>
+  <g transform="translate(28 331)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><path d="M1 17c0-3 2.7-5 6-5s6 2 6 5"/><circle cx="14.5" cy="6" r="2.5"/><path d="M15 11c2.5 0 4.5 1.6 4.5 4.5"/></g>
+  <text x="60" y="346" font-size="15" font-weight="500" fill="#1f2a24">Community</text>
+  <g transform="translate(28 377)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2L4 11h6l-1 7 7-9h-6z"/></g>
+  <text x="60" y="392" font-size="15" font-weight="500" fill="#1f2a24">AI Intelligence</text>
+  <g transform="translate(172 377)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8l4 4 4-4"/></g>
+  <path d="M14 656.5h182" stroke="#e4e7e5"/>
+  <g transform="translate(28 676)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="2.6"/><circle cx="10" cy="10" r="6.5"/><path d="M10 1v2M10 17v2M1 10h2M17 10h2M3.6 3.6l1.4 1.4M15 15l1.4 1.4M3.6 16.4L5 15M15 5l1.4-1.4"/></g>
+  <text x="60" y="691" font-size="15" font-weight="500" fill="#1f2a24">Settings</text>
+  <g transform="translate(28 722)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"/><path d="M7.6 7.8a2.5 2.5 0 1 1 3.4 2.4c-.7.3-1 .8-1 1.6"/><path d="M10 14.6v.1"/></g>
+  <text x="60" y="737" font-size="15" font-weight="500" fill="#1f2a24">Help</text>
+  <!-- heading -->
+  <g transform="translate(240 112)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 10H4M9 5l-5 5 5 5"/></g>
+  <text x="272" y="129" font-size="22" font-weight="700" fill="#1f2a24">My Profile</text>
+  <text x="1168" y="128" font-size="13" text-anchor="end" fill="#7a837e">Charlene Locksley  /  <tspan fill="#1f4d3a" font-weight="600">My Profile</tspan></text>
+  <text x="240" y="156" font-size="14" fill="#7a837e">Your details as stored in the authors table. Ask your admin to change them.</text>
+  <!-- summary card -->
+  <defs><clipPath id="pf-card"><rect x="240" y="174" width="300" height="560" rx="14"/></clipPath></defs>
+  <rect x="240" y="174" width="300" height="560" rx="14" fill="#ffffff"/>
+  <rect x="240" y="174" width="300" height="90" rx="0" fill="#dcefe5" clip-path="url(#pf-card)"/>
+  <path d="M240 244c60-26 120 10 180-8s90-30 120-10v38H240z" fill="#a8cbb8" opacity=".45" clip-path="url(#pf-card)"/>
+  <rect x="240" y="174" width="300" height="560" rx="14" fill="none" stroke="#e4e7e5"/>
+  <circle cx="390" cy="264" r="52" fill="#ffffff"/>
+  <circle cx="390" cy="264" r="47" fill="#1f4d3a"/>
+  <text x="390" y="275" font-size="30" font-weight="700" text-anchor="middle" fill="#ffffff" letter-spacing="1">CL</text>
+  <text x="390" y="344" font-size="20" font-weight="700" text-anchor="middle" fill="#1f2a24">Charlene Locksley</text>
+  <text x="390" y="366" font-size="13" text-anchor="middle" fill="#7a837e">@clocksley · Author</text>
+  <rect x="324.0" y="380" width="132.0" height="22" rx="11" fill="#dcefe5"/>
+  <text x="390" y="395" font-size="12" font-weight="600" text-anchor="middle" fill="#1f4d3a">Contract signed</text>
+  <text x="390" y="436" font-size="13" text-anchor="middle" fill="#7a837e">Author ID 486-29-1786</text>
+  <text x="390" y="456" font-size="13" text-anchor="middle" fill="#7a837e">San Francisco, CA</text>
+  <path d="M264 492.5h252" stroke="#e4e7e5"/>
+  <text x="290" y="526" font-size="20" font-weight="700" text-anchor="middle" fill="#1f2a24">1</text>
+  <text x="290" y="546" font-size="12" text-anchor="middle" fill="#7a837e">Books</text>
+  <text x="390" y="526" font-size="20" font-weight="700" text-anchor="middle" fill="#1f2a24">0</text>
+  <text x="390" y="546" font-size="12" text-anchor="middle" fill="#7a837e">Units sold</text>
+  <path d="M340.5 508v44" stroke="#e4e7e5"/>
+  <text x="490" y="526" font-size="20" font-weight="700" text-anchor="middle" fill="#1f2a24">100%</text>
+  <text x="490" y="546" font-size="12" text-anchor="middle" fill="#7a837e">Royalty share</text>
+  <path d="M440.5 508v44" stroke="#e4e7e5"/>
+  <path d="M264 568.5h252" stroke="#e4e7e5"/>
+  <g transform="translate(264 588) scale(0.8)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="15" height="13.5" rx="2"/><path d="M2.5 8.5h15M6.5 2v4M13.5 2v4"/></g>
+  <text x="288" y="601" font-size="13" fill="#7a837e">Login created</text>
+  <text x="516" y="601" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">26 Oct 2026</text>
+  <g transform="translate(264 618) scale(0.8)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="12" r="4"/><path d="M10 9l7-7M14 5l2.5 2.5"/></g>
+  <text x="288" y="631" font-size="13" fill="#7a837e">Last login</text>
+  <text x="516" y="631" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">Never</text>
+  <rect x="264" y="666" width="252" height="40" rx="8" fill="#ffffff" stroke="#e4e7e5"/>
+  <g transform="translate(278 677.0) scale(0.9)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="12" r="4"/><path d="M10 9l7-7M14 5l2.5 2.5"/></g>
+  <text x="302" y="691.0" font-size="14" font-weight="600" fill="#1f4d3a">Change password</text>
+  <!-- personal information -->
+  <rect x="560" y="174" width="608" height="282" rx="14" fill="#ffffff" stroke="#e4e7e5"/>
+  <text x="588" y="206" font-size="15" font-weight="700" fill="#1f2a24">Personal information</text>
+  <g transform="translate(1016 194) scale(0.8)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="9" width="13" height="9" rx="2"/><path d="M6.5 9V6a3.5 3.5 0 0 1 7 0v3"/></g>
+  <text x="1144" y="206" font-size="12" font-weight="600" text-anchor="end" fill="#7a837e">Managed by admin</text>
+  <path d="M560 222.5h608" stroke="#e4e7e5"/>
+  <rect x="588" y="240" width="32" height="32" rx="8" fill="#eef6f1"/>
+  <g transform="translate(595 247) scale(0.9)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="7" r="3.5"/><path d="M3 18c0-3.9 3.1-6.5 7-6.5s7 2.6 7 6.5"/></g>
+  <text x="632" y="252" font-size="12" fill="#7a837e">First name</text>
+  <text x="632" y="272" font-size="14" font-weight="600" fill="#1f2a24">Charlene</text>
+  <rect x="878" y="240" width="32" height="32" rx="8" fill="#eef6f1"/>
+  <g transform="translate(885 247) scale(0.9)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="7" r="3.5"/><path d="M3 18c0-3.9 3.1-6.5 7-6.5s7 2.6 7 6.5"/></g>
+  <text x="922" y="252" font-size="12" fill="#7a837e">Last name</text>
+  <text x="922" y="272" font-size="14" font-weight="600" fill="#1f2a24">Locksley</text>
+  <rect x="588" y="292" width="32" height="32" rx="8" fill="#eef6f1"/>
+  <g transform="translate(595 299) scale(0.9)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="4" width="17" height="12" rx="2"/><circle cx="7" cy="9.5" r="2"/><path d="M4 14c.5-1.4 1.6-2 3-2s2.5.6 3 2M12.5 8.5h3.5M12.5 11.5h3"/></g>
+  <text x="632" y="304" font-size="12" fill="#7a837e">Author ID</text>
+  <text x="632" y="324" font-size="14" font-weight="600" fill="#1f2a24">486-29-1786</text>
+  <rect x="878" y="292" width="32" height="32" rx="8" fill="#eef6f1"/>
+  <g transform="translate(885 299) scale(0.9)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 2.5h3.5l1.8 4.3-2.4 1.6a9.6 9.6 0 0 0 4.7 4.7l1.6-2.4 4.3 1.8v3.5a1.8 1.8 0 0 1-1.9 1.8A15.6 15.6 0 0 1 2.2 4.4 1.8 1.8 0 0 1 4 2.5z"/></g>
+  <text x="922" y="304" font-size="12" fill="#7a837e">Phone</text>
+  <text x="922" y="324" font-size="14" font-weight="600" fill="#1f2a24">415 585-4620</text>
+  <rect x="588" y="344" width="32" height="32" rx="8" fill="#eef6f1"/>
+  <g transform="translate(595 351) scale(0.9)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l7-6 7 6v8.5H3z"/><path d="M8 17.5V12h4v5.5"/></g>
+  <text x="632" y="356" font-size="12" fill="#7a837e">Address</text>
+  <text x="632" y="376" font-size="14" font-weight="600" fill="#1f2a24">18 Broadway Av.</text>
+  <rect x="878" y="344" width="32" height="32" rx="8" fill="#eef6f1"/>
+  <g transform="translate(885 351) scale(0.9)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 18s6-5.5 6-10.2a6 6 0 0 0-12 0C4 12.5 10 18 10 18z"/><circle cx="10" cy="7.8" r="2.2"/></g>
+  <text x="922" y="356" font-size="12" fill="#7a837e">City</text>
+  <text x="922" y="376" font-size="14" font-weight="600" fill="#1f2a24">San Francisco</text>
+  <rect x="588" y="396" width="32" height="32" rx="8" fill="#eef6f1"/>
+  <g transform="translate(595 403) scale(0.9)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5l5-2 6 2 5-2v12l-5 2-6-2-5 2z"/><path d="M7 3v12M13 5v12"/></g>
+  <text x="632" y="408" font-size="12" fill="#7a837e">State</text>
+  <text x="632" y="428" font-size="14" font-weight="600" fill="#1f2a24">CA</text>
+  <rect x="878" y="396" width="32" height="32" rx="8" fill="#eef6f1"/>
+  <g transform="translate(885 403) scale(0.9)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="16" height="12" rx="2"/><path d="M2.5 5l7.5 6 7.5-6"/></g>
+  <text x="922" y="408" font-size="12" fill="#7a837e">ZIP code</text>
+  <text x="922" y="428" font-size="14" font-weight="600" fill="#1f2a24">94130</text>
+  <!-- books + login -->
+  <rect x="560" y="472" width="608" height="262" rx="14" fill="#ffffff" stroke="#e4e7e5"/>
+  <path d="M864.5 492v222" stroke="#e4e7e5"/>
+  <text x="588" y="504" font-size="15" font-weight="700" fill="#1f2a24">My books</text>
+  <text x="840" y="504" font-size="13" font-weight="600" text-anchor="end" fill="#1f4d3a">View all →</text>
+  <rect x="588" y="524" width="252" height="84" rx="10" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <rect x="600" y="536" width="40" height="60" rx="3" fill="#26415e"/>
+  <text x="652" y="552" font-size="14" font-weight="700" fill="#1f2a24">Net Etiquette</text>
+  <text x="652" y="570" font-size="12" fill="#7a837e">PC9999 · Popular computing</text>
+  <text x="652" y="588" font-size="12" fill="#7a837e">Algodata Infosystems · 100%</text>
+  <text x="892" y="504" font-size="15" font-weight="700" fill="#1f2a24">Login</text>
+  <text x="892" y="540" font-size="13" fill="#7a837e">Username</text>
+  <text x="1140" y="540" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">clocksley</text>
+  <text x="892" y="574" font-size="13" fill="#7a837e">Role</text>
+  <text x="1140" y="574" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">Author</text>
+  <text x="892" y="608" font-size="13" fill="#7a837e">Status</text>
+  <rect x="1080" y="593" width="60" height="22" rx="11" fill="#dcefe5"/>
+  <circle cx="1092" cy="604" r="3.5" fill="#2d8a5a"/>
+  <text x="1118" y="608" font-size="11" font-weight="600" text-anchor="middle" fill="#1f4d3a">Active</text>
+  <text x="892" y="642" font-size="13" fill="#7a837e">Can</text>
+  <text x="1140" y="642" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">Add and delete own books</text>
+  <text x="892" y="676" font-size="13" fill="#7a837e">Created by</text>
+  <text x="1140" y="676" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">Admin</text>
+</svg>

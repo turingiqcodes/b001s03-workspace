@@ -1,0 +1,6 @@
+# State files contain the generated passwords
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log

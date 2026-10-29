@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" font-family="'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="aeb-title">
+  <title id="aeb-title">Digital Library – Edit Book</title>
+  <rect width="1200" height="800" fill="#eef6f1"/>
+  <!-- header -->
+  <rect width="1200" height="80" fill="#ffffff"/>
+  <path d="M0 80.5h1200" stroke="#e4e7e5"/>
+  <rect x="24" y="22" width="36" height="36" rx="9" fill="#1f4d3a"/>
+  <path d="M42 33c-3-2-7-2.6-10-2.4v16c3-.2 7 .4 10 2.4 3-2 7-2.6 10-2.4v-16c-3-.2-7 .4-10 2.4z" fill="#ffffff"/>
+  <path d="M42 33v16" stroke="#1f4d3a" stroke-width="1.5"/>
+  <text x="72" y="47" font-size="21" font-weight="700" fill="#1f2a24">Digital Library</text>
+  <rect x="250" y="20" width="540" height="40" rx="10" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <g transform="translate(264 30)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="6"/><path d="M13 13l5 5"/></g>
+  <text x="294" y="45" font-size="15" fill="#7a837e">Search the library</text>
+  <rect x="802" y="20" width="104" height="40" rx="10" fill="#ffffff" stroke="#e4e7e5"/>
+  <g transform="translate(818 30)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h8M15 5h2M3 10h2M9 10h8M3 15h10"/><circle cx="13" cy="5" r="2"/><circle cx="7" cy="10" r="2"/><circle cx="15" cy="15" r="2"/></g>
+  <text x="846" y="45" font-size="15" font-weight="600" fill="#1f2a24">Filter</text>
+  <!-- theme toggle -->
+  <rect x="958" y="22" width="84" height="36" rx="18" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <circle cx="978" cy="40" r="14" fill="#1f4d3a"/>
+  <g stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"><circle cx="978" cy="40" r="4" fill="none"/><path d="M978 31.5v2M978 46.5v2M969.5 40h2M984.5 40h2M972 34l1.4 1.4M982.6 44.6L984 46M972 46l1.4-1.4M982.6 35.4L984 34"/></g>
+  <path d="M1026 33a7 7 0 1 0 6 10.5 5.6 5.6 0 0 1-6-10.5z" fill="none" stroke="#7a837e" stroke-width="1.6" stroke-linejoin="round"/>
+  <!-- profile -->
+  <path d="M1058 24v32" stroke="#e4e7e5"/>
+  <circle cx="1090" cy="40" r="18" fill="#dcefe5"/>
+  <circle cx="1090" cy="35" r="6" fill="#1f4d3a"/><path d="M1078.5 51a12 9 0 0 1 23 0" fill="#1f4d3a"/>
+  <circle cx="1090" cy="40" r="18" fill="none" stroke="#a8cbb8" stroke-width="1.5"/>
+  <text x="1116" y="45" font-size="15" font-weight="600" fill="#1f2a24">Author</text>
+  <g transform="translate(1166 31)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8l4 4 4-4"/></g>
+  <!-- sidebar (author) -->
+  <rect x="0" y="81" width="210" height="719" rx="0" fill="#ffffff"/>
+  <path d="M210.5 81v719" stroke="#e4e7e5"/>
+  <text x="28" y="118" font-size="11" font-weight="700" fill="#7a837e" letter-spacing="1.2">MENU</text>
+  <rect x="14" y="136" width="182" height="42" rx="8" fill="#dcefe5"/>
+  <rect x="0" y="142" width="4" height="30" rx="2" fill="#1f4d3a"/>
+  <g transform="translate(28 147)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 5C8 3.5 5.5 3 3 3v12c2.5 0 5 .5 7 2 2-1.5 4.5-2 7-2V3c-2.5 0-5 .5-7 2z"/><path d="M10 5v12"/></g>
+  <text x="60" y="162" font-size="15" font-weight="600" fill="#1f4d3a">My Books</text>
+  <g transform="translate(28 193)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 17.5h16M3.5 17.5V4h3v13.5M6.5 17.5V6h3v11.5M11 17.5l-1.2-11 3-.4 1.2 11M15 17.5V5h2.5v12.5"/></g>
+  <text x="60" y="208" font-size="15" font-weight="500" fill="#1f2a24">Library</text>
+  <g transform="translate(28 239)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 4v12M4 10h12"/></g>
+  <text x="60" y="254" font-size="15" font-weight="500" fill="#1f2a24">Add Book</text>
+  <g transform="translate(28 285)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="7" r="3.5"/><path d="M3 18c0-3.9 3.1-6.5 7-6.5s7 2.6 7 6.5"/></g>
+  <text x="60" y="300" font-size="15" font-weight="500" fill="#1f2a24">My Profile</text>
+  <g transform="translate(28 331)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><path d="M1 17c0-3 2.7-5 6-5s6 2 6 5"/><circle cx="14.5" cy="6" r="2.5"/><path d="M15 11c2.5 0 4.5 1.6 4.5 4.5"/></g>
+  <text x="60" y="346" font-size="15" font-weight="500" fill="#1f2a24">Community</text>
+  <g transform="translate(28 377)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2L4 11h6l-1 7 7-9h-6z"/></g>
+  <text x="60" y="392" font-size="15" font-weight="500" fill="#1f2a24">AI Intelligence</text>
+  <g transform="translate(172 377)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8l4 4 4-4"/></g>
+  <path d="M14 656.5h182" stroke="#e4e7e5"/>
+  <g transform="translate(28 676)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="2.6"/><circle cx="10" cy="10" r="6.5"/><path d="M10 1v2M10 17v2M1 10h2M17 10h2M3.6 3.6l1.4 1.4M15 15l1.4 1.4M3.6 16.4L5 15M15 5l1.4-1.4"/></g>
+  <text x="60" y="691" font-size="15" font-weight="500" fill="#1f2a24">Settings</text>
+  <g transform="translate(28 722)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"/><path d="M7.6 7.8a2.5 2.5 0 1 1 3.4 2.4c-.7.3-1 .8-1 1.6"/><path d="M10 14.6v.1"/></g>
+  <text x="60" y="737" font-size="15" font-weight="500" fill="#1f2a24">Help</text>
+  <!-- heading -->
+  <g transform="translate(240 112)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 10H4M9 5l-5 5 5 5"/></g>
+  <text x="272" y="129" font-size="22" font-weight="700" fill="#1f2a24">Edit Book</text>
+  <text x="1168" y="128" font-size="13" text-anchor="end" fill="#7a837e">Charlene Locksley  /  <tspan fill="#1f4d3a" font-weight="600">Edit Book</tspan></text>
+  <text x="240" y="156" font-size="14" fill="#7a837e">Change the details of “Net Etiquette”. The title ID can’t be changed.</text>
+  <rect x="240" y="174" width="928" height="560" rx="14" fill="#ffffff" stroke="#e4e7e5"/>
+  <!-- cover preview -->
+  <text x="268" y="206" font-size="13" font-weight="600" fill="#1f2a24">Cover preview</text>
+  <rect x="268" y="216" width="200" height="270" rx="12" fill="#eef6f1" stroke="#a8cbb8" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <rect x="319" y="248" width="104" height="152" rx="4" fill="#1f2a24" opacity=".12"/>
+  <rect x="316" y="244" width="104" height="152" rx="4" fill="#26415e"/>
+  <rect x="316" y="244" width="8" height="152" rx="3" fill="#000000" opacity=".15"/>
+  <text x="372.0" y="288" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">NET</text>
+  <text x="372.0" y="305" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">ETIQUETTE</text>
+  <rect x="354.0" y="366" width="36" height="2" rx="0" fill="#f2c66d" opacity=".7"/>
+  <text x="372.0" y="382" font-size="8" font-weight="600" text-anchor="middle" fill="#f2c66d" letter-spacing="1" opacity=".85">C. LOCKSLEY</text>
+  <text x="368" y="446" font-size="12" text-anchor="middle" fill="#7a837e">The cover follows the title</text>
+  <text x="368" y="464" font-size="12" text-anchor="middle" fill="#7a837e">and type</text>
+  <rect x="268" y="510" width="200" height="120" rx="12" fill="#f6f8f7"/>
+  <g transform="translate(282 524) scale(0.8)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"/><path d="M10 9v5M10 6.2v.1"/></g>
+  <text x="304" y="537" font-size="12" font-weight="600" fill="#1f2a24">Where this is saved</text>
+  <text x="284" y="562" font-size="12" fill="#7a837e">Changes → titles (PC9999)</text>
+  <text x="284" y="582" font-size="12" fill="#7a837e">Authors stay in titleauthor</text>
+  <text x="284" y="602" font-size="12" fill="#7a837e">Nothing else changes</text>
+  <text x="500" y="206" font-size="13" font-weight="600" fill="#1f2a24">Book title<tspan fill="#c0533a"> *</tspan></text>
+  <rect x="500" y="216" width="640" height="42" rx="9" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <text x="514" y="242" font-size="14" fill="#1f2a24">Net Etiquette</text>
+  <text x="500" y="282" font-size="13" font-weight="600" fill="#1f2a24">Title ID</text>
+  <rect x="500" y="292" width="310" height="42" rx="9" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <text x="514" y="318" font-size="14" fill="#1f2a24">PC9999</text>
+  <g transform="translate(778 303) scale(0.9)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="9" width="13" height="9" rx="2"/><path d="M6.5 9V6a3.5 3.5 0 0 1 7 0v3"/></g>
+  <text x="830" y="282" font-size="13" font-weight="600" fill="#1f2a24">Type<tspan fill="#c0533a"> *</tspan></text>
+  <rect x="830" y="292" width="310" height="42" rx="9" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <text x="844" y="318" font-size="14" fill="#1f2a24">Popular computing</text>
+  <g transform="translate(1108 303) scale(0.9)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8l4 4 4-4"/></g>
+  <text x="500" y="358" font-size="13" font-weight="600" fill="#1f2a24">Publisher<tspan fill="#c0533a"> *</tspan></text>
+  <rect x="500" y="368" width="310" height="42" rx="9" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <text x="514" y="394" font-size="14" fill="#1f2a24">Algodata Infosystems</text>
+  <g transform="translate(778 379) scale(0.9)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8l4 4 4-4"/></g>
+  <text x="830" y="358" font-size="13" font-weight="600" fill="#1f2a24">Publication date</text>
+  <rect x="830" y="368" width="310" height="42" rx="9" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <text x="844" y="394" font-size="14" fill="#1f2a24">1991-06-12</text>
+  <g transform="translate(1108 379) scale(0.9)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="15" height="13.5" rx="2"/><path d="M2.5 8.5h15M6.5 2v4M13.5 2v4"/></g>
+  <text x="500" y="434" font-size="13" font-weight="600" fill="#1f2a24">Price ($)</text>
+  <rect x="500" y="444" width="200" height="42" rx="9" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <text x="514" y="470" font-size="14" fill="#7a837e">Not set yet</text>
+  <text x="720" y="434" font-size="13" font-weight="600" fill="#1f2a24">Advance ($)</text>
+  <rect x="720" y="444" width="200" height="42" rx="9" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <text x="734" y="470" font-size="14" fill="#7a837e">Not set yet</text>
+  <text x="940" y="434" font-size="13" font-weight="600" fill="#1f2a24">Royalty (%)</text>
+  <rect x="940" y="444" width="200" height="42" rx="9" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <text x="954" y="470" font-size="14" fill="#7a837e">Not set yet</text>
+  <text x="500" y="510" font-size="13" font-weight="600" fill="#1f2a24">Notes</text>
+  <rect x="500" y="520" width="640" height="56" rx="9" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <text x="514" y="546" font-size="14" fill="#1f2a24">A must-read for the modern netizen.</text>
+  <text x="500" y="628" font-size="12" fill="#7a837e">Price, advance and royalty are empty in the database for this book.</text>
+  <text x="500" y="646" font-size="12" fill="#7a837e">Click them to fill in example values.</text>
+  <path d="M240 672.5h928" stroke="#e4e7e5"/>
+  <g transform="translate(266 692) scale(0.8)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"/><path d="M10 9v5M10 6.2v.1"/></g>
+  <text x="292" y="707" font-size="13" fill="#7a837e">Fields marked * are required.</text>
+  <rect x="906" y="688" width="96" height="32" rx="8" fill="#ffffff" stroke="#e4e7e5"/>
+  <text x="954.0" y="709.0" font-size="14" font-weight="600" text-anchor="middle" fill="#1f4d3a">Cancel</text>
+  <rect x="1014" y="688" width="126" height="32" rx="8" fill="#1f4d3a"/>
+  <text x="1077.0" y="709.0" font-size="14" font-weight="600" text-anchor="middle" fill="#ffffff">Save changes</text>
+</svg>

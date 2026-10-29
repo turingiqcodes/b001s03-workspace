@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" font-family="'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="t-MC3021-title">
+  <title id="t-MC3021-title">Digital Library – The Gourmet Microwave</title>
+  <rect width="1200" height="800" fill="#eef6f1"/>
+  <!-- header -->
+  <rect width="1200" height="80" fill="#ffffff"/>
+  <path d="M0 80.5h1200" stroke="#e4e7e5"/>
+  <rect x="24" y="22" width="36" height="36" rx="9" fill="#1f4d3a"/>
+  <path d="M42 33c-3-2-7-2.6-10-2.4v16c3-.2 7 .4 10 2.4 3-2 7-2.6 10-2.4v-16c-3-.2-7 .4-10 2.4z" fill="#ffffff"/>
+  <path d="M42 33v16" stroke="#1f4d3a" stroke-width="1.5"/>
+  <text x="72" y="47" font-size="21" font-weight="700" fill="#1f2a24">Digital Library</text>
+  <rect x="250" y="20" width="540" height="40" rx="10" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <g transform="translate(264 30)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="6"/><path d="M13 13l5 5"/></g>
+  <text x="294" y="45" font-size="15" fill="#7a837e">Search books or authors</text>
+  <rect x="802" y="20" width="104" height="40" rx="10" fill="#ffffff" stroke="#e4e7e5"/>
+  <g transform="translate(818 30)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h8M15 5h2M3 10h2M9 10h8M3 15h10"/><circle cx="13" cy="5" r="2"/><circle cx="7" cy="10" r="2"/><circle cx="15" cy="15" r="2"/></g>
+  <text x="846" y="45" font-size="15" font-weight="600" fill="#1f2a24">Filter</text>
+  <!-- theme toggle -->
+  <rect x="958" y="22" width="84" height="36" rx="18" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <circle cx="978" cy="40" r="14" fill="#1f4d3a"/>
+  <g stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"><circle cx="978" cy="40" r="4" fill="none"/><path d="M978 31.5v2M978 46.5v2M969.5 40h2M984.5 40h2M972 34l1.4 1.4M982.6 44.6L984 46M972 46l1.4-1.4M982.6 35.4L984 34"/></g>
+  <path d="M1026 33a7 7 0 1 0 6 10.5 5.6 5.6 0 0 1-6-10.5z" fill="none" stroke="#7a837e" stroke-width="1.6" stroke-linejoin="round"/>
+  <!-- profile -->
+  <path d="M1058 24v32" stroke="#e4e7e5"/>
+  <circle cx="1090" cy="40" r="18" fill="#dcefe5"/>
+  <circle cx="1090" cy="35" r="6" fill="#1f4d3a"/><path d="M1078.5 51a12 9 0 0 1 23 0" fill="#1f4d3a"/>
+  <circle cx="1090" cy="40" r="18" fill="none" stroke="#a8cbb8" stroke-width="1.5"/>
+  <text x="1116" y="45" font-size="15" font-weight="600" fill="#1f2a24">Admin</text>
+  <circle cx="1104" cy="54" r="8" fill="#ffffff"/><path d="M1104 48.5l4.5 1.8v3c0 2.6-1.9 4.4-4.5 5.2-2.6-.8-4.5-2.6-4.5-5.2v-3z" fill="#e0a83a"/>
+  <g transform="translate(1166 31)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8l4 4 4-4"/></g>
+  <!-- sidebar (admin) -->
+  <rect x="0" y="81" width="210" height="719" rx="0" fill="#ffffff"/>
+  <path d="M210.5 81v719" stroke="#e4e7e5"/>
+  <text x="28" y="118" font-size="11" font-weight="700" fill="#7a837e" letter-spacing="1.2">MENU</text>
+  <text x="28" y="347" font-size="11" font-weight="700" fill="#7a837e" letter-spacing="1.2">ADMIN</text>
+  <g transform="translate(28 147)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="7" height="7" rx="1.5"/><rect x="11" y="2" width="7" height="7" rx="1.5"/><rect x="2" y="11" width="7" height="7" rx="1.5"/><rect x="11" y="11" width="7" height="7" rx="1.5"/></g>
+  <text x="60" y="162" font-size="15" font-weight="500" fill="#1f2a24">Dashboard</text>
+  <rect x="14" y="182" width="182" height="42" rx="8" fill="#dcefe5"/>
+  <rect x="0" y="188" width="4" height="30" rx="2" fill="#1f4d3a"/>
+  <g transform="translate(28 193)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 5C8 3.5 5.5 3 3 3v12c2.5 0 5 .5 7 2 2-1.5 4.5-2 7-2V3c-2.5 0-5 .5-7 2z"/><path d="M10 5v12"/></g>
+  <text x="60" y="208" font-size="15" font-weight="600" fill="#1f4d3a">Library</text>
+  <g transform="translate(28 239)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><path d="M1 17c0-3 2.7-5 6-5s6 2 6 5"/><circle cx="14.5" cy="6" r="2.5"/><path d="M15 11c2.5 0 4.5 1.6 4.5 4.5"/></g>
+  <text x="60" y="254" font-size="15" font-weight="500" fill="#1f2a24">Community</text>
+  <g transform="translate(28 285)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2L4 11h6l-1 7 7-9h-6z"/></g>
+  <text x="60" y="300" font-size="15" font-weight="500" fill="#1f2a24">AI Intelligence</text>
+  <g transform="translate(172 285)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8l4 4 4-4"/></g>
+  <g transform="translate(28 376)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h2.5l2 10h9.5l2-7H5.5"/><circle cx="8" cy="16.5" r="1.3"/><circle cx="15" cy="16.5" r="1.3"/></g>
+  <text x="60" y="391" font-size="15" font-weight="500" fill="#1f2a24">Sales</text>
+  <g transform="translate(28 422)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 2H17a1 1 0 0 1 1 1v6.5l-8.5 8.5L2 10.5z"/><circle cx="13.5" cy="6.5" r="1.4"/></g>
+  <text x="60" y="437" font-size="15" font-weight="500" fill="#1f2a24">Discounts</text>
+  <g transform="translate(28 468)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7l1.5-4.5h13L18 7"/><path d="M2 7c0 1.5 1.3 2.5 2.7 2.5S7.3 8.5 7.3 7c0 1.5 1.3 2.5 2.7 2.5s2.7-1 2.7-2.5c0 1.5 1.3 2.5 2.6 2.5S18 8.5 18 7M3.5 9.5V17h13V9.5M8 17v-4h4v4"/></g>
+  <text x="60" y="483" font-size="15" font-weight="500" fill="#1f2a24">Stores</text>
+  <g transform="translate(28 514)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18V5l7-3 7 3v13"/><path d="M1.5 18h17M7 8h2M11 8h2M7 12h2M11 12h2"/></g>
+  <text x="60" y="529" font-size="15" font-weight="500" fill="#1f2a24">Publishers</text>
+  <g transform="translate(28 560)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="16" height="13" rx="2"/><circle cx="7.5" cy="10" r="2.2"/><path d="M4 15c.6-1.6 2-2.4 3.5-2.4s2.9.8 3.5 2.4M12.5 9h3.5M12.5 12h3"/></g>
+  <text x="60" y="575" font-size="15" font-weight="500" fill="#1f2a24">Employees</text>
+  <g transform="translate(28 606)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="12" r="4"/><path d="M10 9l7-7M14 5l2.5 2.5M12 7l2 2"/></g>
+  <text x="60" y="621" font-size="15" font-weight="500" fill="#1f2a24">Author Access</text>
+  <path d="M14 656.5h182" stroke="#e4e7e5"/>
+  <g transform="translate(28 676)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="2.6"/><circle cx="10" cy="10" r="6.5"/><path d="M10 1v2M10 17v2M1 10h2M17 10h2M3.6 3.6l1.4 1.4M15 15l1.4 1.4M3.6 16.4L5 15M15 5l1.4-1.4"/></g>
+  <text x="60" y="691" font-size="15" font-weight="500" fill="#1f2a24">Settings</text>
+  <g transform="translate(28 722)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"/><path d="M7.6 7.8a2.5 2.5 0 1 1 3.4 2.4c-.7.3-1 .8-1 1.6"/><path d="M10 14.6v.1"/></g>
+  <text x="60" y="737" font-size="15" font-weight="500" fill="#1f2a24">Help</text>
+  <!-- heading -->
+  <g transform="translate(240 112)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 10H4M9 5l-5 5 5 5"/></g>
+  <text x="272" y="129" font-size="22" font-weight="700" fill="#1f2a24">The Gourmet Microwave</text>
+  <text x="1168" y="128" font-size="13" text-anchor="end" fill="#7a837e">Library  /  <tspan fill="#1f4d3a" font-weight="600">MC3021</tspan></text>
+  <text x="240" y="156" font-size="14" fill="#7a837e">Modern cooking · Binnet &amp; Hardley · Title ID MC3021</text>
+  <rect x="240" y="174" width="300" height="606" rx="14" fill="#ffffff" stroke="#e4e7e5"/>
+  <rect x="264" y="194" width="252" height="196" rx="12" fill="#dcefe5"/>
+  <rect x="341" y="220" width="104" height="152" rx="4" fill="#1f2a24" opacity=".12"/>
+  <rect x="338" y="216" width="104" height="152" rx="4" fill="#e8a35c"/>
+  <rect x="338" y="216" width="8" height="152" rx="3" fill="#000000" opacity=".15"/>
+  <text x="394.0" y="260" font-size="12" font-weight="800" text-anchor="middle" fill="#1f2a24" letter-spacing=".5">THE GOURMET</text>
+  <text x="394.0" y="277" font-size="12" font-weight="800" text-anchor="middle" fill="#1f2a24" letter-spacing=".5">MICROWAVE</text>
+  <rect x="376.0" y="338" width="36" height="2" rx="0" fill="#1f2a24" opacity=".7"/>
+  <text x="394.0" y="354" font-size="8" font-weight="600" text-anchor="middle" fill="#1f2a24" letter-spacing="1" opacity=".85">A. YOKOMOTO</text>
+  <text x="264" y="424" font-size="13" fill="#7a837e">Type</text>
+  <text x="516" y="424" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">Modern cooking</text>
+  <text x="264" y="450" font-size="13" fill="#7a837e">Publisher</text>
+  <text x="516" y="450" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">Binnet &amp; Hardley</text>
+  <text x="264" y="476" font-size="13" fill="#7a837e">Price</text>
+  <text x="516" y="476" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">$2.99</text>
+  <text x="264" y="502" font-size="13" fill="#7a837e">Advance</text>
+  <text x="516" y="502" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">$15,000</text>
+  <text x="264" y="528" font-size="13" fill="#7a837e">Royalty</text>
+  <text x="516" y="528" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">24%</text>
+  <text x="264" y="554" font-size="13" fill="#7a837e">YTD sales</text>
+  <text x="516" y="554" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">22,246</text>
+  <text x="264" y="580" font-size="13" fill="#7a837e">Published</text>
+  <text x="516" y="580" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">18 Jun 1991</text>
+  <rect x="264" y="606" width="252" height="82" rx="10" fill="#f6f8f7"/>
+  <text x="278" y="626" font-size="10" font-weight="700" fill="#7a837e" letter-spacing="1">NOTES</text>
+  <text x="278" y="646" font-size="12" fill="#1f2a24">Traditional French cooking for</text>
+  <text x="278" y="663" font-size="12" fill="#1f2a24">computer hackers.</text>
+  <rect x="264" y="704" width="120" height="36" rx="8" fill="#ffffff" stroke="#e4e7e5"/>
+  <g transform="translate(278 713.0) scale(0.9)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 3l3.5 3.5L7 16.5H3.5V13z"/></g>
+  <text x="302" y="727.0" font-size="14" font-weight="600" fill="#1f4d3a">Edit</text>
+  <rect x="396" y="704" width="120" height="36" rx="8" fill="#ffffff" stroke="#e5b7ab"/>
+  <g transform="translate(410 713.0) scale(0.9)" fill="none" stroke="#a23f2a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h14M8 5V3h4v2M5 5l1 12h8l1-12M8.5 8.5v5.5M11.5 8.5v5.5"/></g>
+  <text x="434" y="727.0" font-size="14" font-weight="600" fill="#a23f2a">Remove</text>
+  <rect x="556" y="174" width="612" height="168" rx="14" fill="#ffffff" stroke="#e4e7e5"/>
+  <text x="580" y="204" font-size="15" font-weight="700" fill="#1f2a24">Authors</text>
+  <text x="650" y="204" font-size="13" fill="#7a837e">2</text>
+  <rect x="557" y="218" width="610" height="32" rx="0" fill="#f6f8f7"/>
+  <path d="M556 218.5h612" stroke="#e4e7e5"/>
+  <path d="M556 249.5h612" stroke="#e4e7e5"/>
+  <text x="580" y="239" font-size="12" font-weight="600" fill="#7a837e">Author</text>
+  <text x="800" y="239" font-size="12" font-weight="600" fill="#7a837e">Author ID</text>
+  <text x="960" y="239" font-size="12" font-weight="600" text-anchor="middle" fill="#7a837e">Order</text>
+  <text x="1144" y="239" font-size="12" font-weight="600" text-anchor="end" fill="#7a837e">Royalty share</text>
+  <g transform="translate(580 312) scale(0.8)" fill="none" stroke="#8a5a12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"/><path d="M10 9v5M10 6.2v.1"/></g>
+  <text x="602" y="325" font-size="12" font-weight="600" fill="#8a5a12">Royalty shares add up to 125%, not 100%. Fix this in titleauthor.</text>
+  <text x="580" y="270" font-size="13" font-weight="600" fill="#1f2a24">Akiko Yokomoto</text>
+  <text x="800" y="270" font-size="12" fill="#7a837e">672-71-3249</text>
+  <text x="960" y="270" font-size="13" text-anchor="middle" fill="#1f2a24">1</text>
+  <text x="1144" y="270" font-size="13" font-weight="700" text-anchor="end" fill="#1f4d3a">100%</text>
+  <text x="580" y="300" font-size="13" font-weight="600" fill="#1f2a24">Michel DeFrance</text>
+  <text x="800" y="300" font-size="12" fill="#7a837e">722-51-5454</text>
+  <text x="960" y="300" font-size="13" text-anchor="middle" fill="#1f2a24">2</text>
+  <text x="1144" y="300" font-size="13" font-weight="700" text-anchor="end" fill="#1f4d3a">25%</text>
+  <rect x="556" y="358" width="296" height="190" rx="14" fill="#ffffff" stroke="#e4e7e5"/>
+  <text x="580" y="388" font-size="15" font-weight="700" fill="#1f2a24">Royalty schedule</text>
+  <path d="M556 402.5h296" stroke="#e4e7e5"/>
+  <text x="580" y="432" font-size="13" fill="#1f2a24">0 – 2,000 copies</text>
+  <text x="828" y="432" font-size="13" font-weight="700" text-anchor="end" fill="#1f4d3a">24%</text>
+  <text x="580" y="462" font-size="13" fill="#1f2a24">2,001 – 4,000 copies</text>
+  <text x="828" y="462" font-size="13" font-weight="700" text-anchor="end" fill="#1f4d3a">24%</text>
+  <rect x="872" y="358" width="296" height="190" rx="14" fill="#ffffff" stroke="#e4e7e5"/>
+  <text x="896" y="388" font-size="15" font-weight="700" fill="#1f2a24">Sales</text>
+  <path d="M872 402.5h296" stroke="#e4e7e5"/>
+  <text x="896" y="440" font-size="18" font-weight="700" fill="#1f2a24">15</text>
+  <text x="896" y="458" font-size="12" fill="#7a837e">Units sold</text>
+  <text x="1036" y="440" font-size="18" font-weight="700" fill="#1f2a24">$44.85</text>
+  <text x="1036" y="458" font-size="12" fill="#7a837e">Revenue</text>
+  <text x="896" y="496" font-size="18" font-weight="700" fill="#1f2a24">1</text>
+  <text x="896" y="514" font-size="12" fill="#7a837e">Orders</text>
+  <text x="1036" y="496" font-size="18" font-weight="700" fill="#1f2a24">1</text>
+  <text x="1036" y="514" font-size="12" fill="#7a837e">Stores</text>
+  <rect x="556" y="564" width="612" height="216" rx="14" fill="#ffffff" stroke="#e4e7e5"/>
+  <text x="580" y="594" font-size="15" font-weight="700" fill="#1f2a24">Sales of this title</text>
+  <text x="718" y="594" font-size="13" fill="#7a837e">1 line</text>
+  <rect x="557" y="608" width="610" height="32" rx="0" fill="#f6f8f7"/>
+  <path d="M556 608.5h612" stroke="#e4e7e5"/>
+  <path d="M556 639.5h612" stroke="#e4e7e5"/>
+  <text x="580" y="629" font-size="12" font-weight="600" fill="#7a837e">Order #</text>
+  <text x="670" y="629" font-size="12" font-weight="600" fill="#7a837e">Date</text>
+  <text x="790" y="629" font-size="12" font-weight="600" fill="#7a837e">Store</text>
+  <text x="1040" y="629" font-size="12" font-weight="600" text-anchor="end" fill="#7a837e">Qty</text>
+  <text x="1144" y="629" font-size="12" font-weight="600" text-anchor="end" fill="#7a837e">Amount</text>
+  <text x="580" y="662" font-size="13" font-weight="600" fill="#1f2a24">423LL922</text>
+  <text x="670" y="662" font-size="13" fill="#7a837e">14 Sep 1994</text>
+  <text x="790" y="662" font-size="13" fill="#1f2a24">Bookbeat</text>
+  <text x="1040" y="662" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">15</text>
+  <text x="1144" y="662" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">$44.85</text>
+</svg>

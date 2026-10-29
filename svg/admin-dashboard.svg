@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" font-family="'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="adm-title">
+  <title id="adm-title">Digital Library – Admin Dashboard</title>
+  <rect width="1200" height="800" fill="#eef6f1"/>
+  <!-- header -->
+  <rect width="1200" height="80" fill="#ffffff"/>
+  <path d="M0 80.5h1200" stroke="#e4e7e5"/>
+  <rect x="24" y="22" width="36" height="36" rx="9" fill="#1f4d3a"/>
+  <path d="M42 33c-3-2-7-2.6-10-2.4v16c3-.2 7 .4 10 2.4 3-2 7-2.6 10-2.4v-16c-3-.2-7 .4-10 2.4z" fill="#ffffff"/>
+  <path d="M42 33v16" stroke="#1f4d3a" stroke-width="1.5"/>
+  <text x="72" y="47" font-size="21" font-weight="700" fill="#1f2a24">Digital Library</text>
+  <rect x="250" y="20" width="540" height="40" rx="10" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <g transform="translate(264 30)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="6"/><path d="M13 13l5 5"/></g>
+  <text x="294" y="45" font-size="15" fill="#7a837e">Search books or authors</text>
+  <rect x="802" y="20" width="104" height="40" rx="10" fill="#ffffff" stroke="#e4e7e5"/>
+  <g transform="translate(818 30)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h8M15 5h2M3 10h2M9 10h8M3 15h10"/><circle cx="13" cy="5" r="2"/><circle cx="7" cy="10" r="2"/><circle cx="15" cy="15" r="2"/></g>
+  <text x="846" y="45" font-size="15" font-weight="600" fill="#1f2a24">Filter</text>
+  <!-- theme toggle -->
+  <rect x="958" y="22" width="84" height="36" rx="18" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <circle cx="978" cy="40" r="14" fill="#1f4d3a"/>
+  <g stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"><circle cx="978" cy="40" r="4" fill="none"/><path d="M978 31.5v2M978 46.5v2M969.5 40h2M984.5 40h2M972 34l1.4 1.4M982.6 44.6L984 46M972 46l1.4-1.4M982.6 35.4L984 34"/></g>
+  <path d="M1026 33a7 7 0 1 0 6 10.5 5.6 5.6 0 0 1-6-10.5z" fill="none" stroke="#7a837e" stroke-width="1.6" stroke-linejoin="round"/>
+  <!-- profile -->
+  <path d="M1058 24v32" stroke="#e4e7e5"/>
+  <circle cx="1090" cy="40" r="18" fill="#dcefe5"/>
+  <circle cx="1090" cy="35" r="6" fill="#1f4d3a"/><path d="M1078.5 51a12 9 0 0 1 23 0" fill="#1f4d3a"/>
+  <circle cx="1090" cy="40" r="18" fill="none" stroke="#a8cbb8" stroke-width="1.5"/>
+  <text x="1116" y="45" font-size="15" font-weight="600" fill="#1f2a24">Admin</text>
+  <circle cx="1104" cy="54" r="8" fill="#ffffff"/><path d="M1104 48.5l4.5 1.8v3c0 2.6-1.9 4.4-4.5 5.2-2.6-.8-4.5-2.6-4.5-5.2v-3z" fill="#e0a83a"/>
+  <g transform="translate(1166 31)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8l4 4 4-4"/></g>
+  <!-- sidebar (admin) -->
+  <rect x="0" y="81" width="210" height="719" rx="0" fill="#ffffff"/>
+  <path d="M210.5 81v719" stroke="#e4e7e5"/>
+  <text x="28" y="118" font-size="11" font-weight="700" fill="#7a837e" letter-spacing="1.2">MENU</text>
+  <text x="28" y="347" font-size="11" font-weight="700" fill="#7a837e" letter-spacing="1.2">ADMIN</text>
+  <rect x="14" y="136" width="182" height="42" rx="8" fill="#dcefe5"/>
+  <rect x="0" y="142" width="4" height="30" rx="2" fill="#1f4d3a"/>
+  <g transform="translate(28 147)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="7" height="7" rx="1.5"/><rect x="11" y="2" width="7" height="7" rx="1.5"/><rect x="2" y="11" width="7" height="7" rx="1.5"/><rect x="11" y="11" width="7" height="7" rx="1.5"/></g>
+  <text x="60" y="162" font-size="15" font-weight="600" fill="#1f4d3a">Dashboard</text>
+  <g transform="translate(28 193)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 5C8 3.5 5.5 3 3 3v12c2.5 0 5 .5 7 2 2-1.5 4.5-2 7-2V3c-2.5 0-5 .5-7 2z"/><path d="M10 5v12"/></g>
+  <text x="60" y="208" font-size="15" font-weight="500" fill="#1f2a24">Library</text>
+  <g transform="translate(28 239)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><path d="M1 17c0-3 2.7-5 6-5s6 2 6 5"/><circle cx="14.5" cy="6" r="2.5"/><path d="M15 11c2.5 0 4.5 1.6 4.5 4.5"/></g>
+  <text x="60" y="254" font-size="15" font-weight="500" fill="#1f2a24">Community</text>
+  <g transform="translate(28 285)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2L4 11h6l-1 7 7-9h-6z"/></g>
+  <text x="60" y="300" font-size="15" font-weight="500" fill="#1f2a24">AI Intelligence</text>
+  <g transform="translate(172 285)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8l4 4 4-4"/></g>
+  <g transform="translate(28 376)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h2.5l2 10h9.5l2-7H5.5"/><circle cx="8" cy="16.5" r="1.3"/><circle cx="15" cy="16.5" r="1.3"/></g>
+  <text x="60" y="391" font-size="15" font-weight="500" fill="#1f2a24">Sales</text>
+  <g transform="translate(28 422)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 2H17a1 1 0 0 1 1 1v6.5l-8.5 8.5L2 10.5z"/><circle cx="13.5" cy="6.5" r="1.4"/></g>
+  <text x="60" y="437" font-size="15" font-weight="500" fill="#1f2a24">Discounts</text>
+  <g transform="translate(28 468)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7l1.5-4.5h13L18 7"/><path d="M2 7c0 1.5 1.3 2.5 2.7 2.5S7.3 8.5 7.3 7c0 1.5 1.3 2.5 2.7 2.5s2.7-1 2.7-2.5c0 1.5 1.3 2.5 2.6 2.5S18 8.5 18 7M3.5 9.5V17h13V9.5M8 17v-4h4v4"/></g>
+  <text x="60" y="483" font-size="15" font-weight="500" fill="#1f2a24">Stores</text>
+  <g transform="translate(28 514)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18V5l7-3 7 3v13"/><path d="M1.5 18h17M7 8h2M11 8h2M7 12h2M11 12h2"/></g>
+  <text x="60" y="529" font-size="15" font-weight="500" fill="#1f2a24">Publishers</text>
+  <g transform="translate(28 560)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="16" height="13" rx="2"/><circle cx="7.5" cy="10" r="2.2"/><path d="M4 15c.6-1.6 2-2.4 3.5-2.4s2.9.8 3.5 2.4M12.5 9h3.5M12.5 12h3"/></g>
+  <text x="60" y="575" font-size="15" font-weight="500" fill="#1f2a24">Employees</text>
+  <g transform="translate(28 606)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="12" r="4"/><path d="M10 9l7-7M14 5l2.5 2.5M12 7l2 2"/></g>
+  <text x="60" y="621" font-size="15" font-weight="500" fill="#1f2a24">Author Access</text>
+  <path d="M14 656.5h182" stroke="#e4e7e5"/>
+  <g transform="translate(28 676)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="2.6"/><circle cx="10" cy="10" r="6.5"/><path d="M10 1v2M10 17v2M1 10h2M17 10h2M3.6 3.6l1.4 1.4M15 15l1.4 1.4M3.6 16.4L5 15M15 5l1.4-1.4"/></g>
+  <text x="60" y="691" font-size="15" font-weight="500" fill="#1f2a24">Settings</text>
+  <g transform="translate(28 722)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"/><path d="M7.6 7.8a2.5 2.5 0 1 1 3.4 2.4c-.7.3-1 .8-1 1.6"/><path d="M10 14.6v.1"/></g>
+  <text x="60" y="737" font-size="15" font-weight="500" fill="#1f2a24">Help</text>
+  <!-- heading -->
+  <g transform="translate(240 112)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 10H4M9 5l-5 5 5 5"/></g>
+  <text x="272" y="129" font-size="22" font-weight="700" fill="#1f2a24">Admin Dashboard</text>
+  <text x="1168" y="128" font-size="13" text-anchor="end" fill="#7a837e">Admin  /  <tspan fill="#1f4d3a" font-weight="600">Dashboard</tspan></text>
+  <text x="240" y="156" font-size="14" fill="#7a837e">Welcome back. Here’s how sales, discounts, publishers and employees look today.</text>
+  <rect x="240" y="174" width="220" height="96" rx="12" fill="#ffffff" stroke="#e4e7e5"/>
+  <rect x="260" y="194" width="36" height="36" rx="9" fill="#eef6f1"/>
+  <g transform="translate(268 202)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h2.5l2 10h9.5l2-7H5.5"/><circle cx="8" cy="16.5" r="1.3"/><circle cx="15" cy="16.5" r="1.3"/></g>
+  <text x="308" y="208" font-size="13" fill="#7a837e">Orders</text>
+  <text x="308" y="234" font-size="22" font-weight="700" fill="#1f2a24">34</text>
+  <text x="260" y="256" font-size="12" fill="#7a837e">35 order lines · 10 stores</text>
+  <rect x="476" y="174" width="220" height="96" rx="12" fill="#ffffff" stroke="#e4e7e5"/>
+  <rect x="496" y="194" width="36" height="36" rx="9" fill="#eef6f1"/>
+  <g transform="translate(504 202)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"/><path d="M12.5 7c-.5-1-1.5-1.4-2.5-1.4-1.4 0-2.5.8-2.5 2s1 1.7 2.5 2 2.5.8 2.5 2-1.1 2-2.5 2c-1.1 0-2.1-.5-2.6-1.5M10 4v1.6M10 14.4V16"/></g>
+  <text x="544" y="208" font-size="13" fill="#7a837e">Revenue</text>
+  <text x="544" y="234" font-size="22" font-weight="700" fill="#1f2a24">$20,234.00</text>
+  <text x="496" y="256" font-size="12" fill="#7a837e">875 units sold</text>
+  <rect x="712" y="174" width="220" height="96" rx="12" fill="#ffffff" stroke="#e4e7e5"/>
+  <rect x="732" y="194" width="36" height="36" rx="9" fill="#eef6f1"/>
+  <g transform="translate(740 202)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18V5l7-3 7 3v13"/><path d="M1.5 18h17M7 8h2M11 8h2M7 12h2M11 12h2"/></g>
+  <text x="780" y="208" font-size="13" fill="#7a837e">Publishers</text>
+  <text x="780" y="234" font-size="22" font-weight="700" fill="#1f2a24">6</text>
+  <text x="732" y="256" font-size="12" fill="#7a837e">26 titles published</text>
+  <rect x="948" y="174" width="220" height="96" rx="12" fill="#ffffff" stroke="#e4e7e5"/>
+  <rect x="968" y="194" width="36" height="36" rx="9" fill="#eef6f1"/>
+  <g transform="translate(976 202)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="16" height="13" rx="2"/><circle cx="7.5" cy="10" r="2.2"/><path d="M4 15c.6-1.6 2-2.4 3.5-2.4s2.9.8 3.5 2.4M12.5 9h3.5M12.5 12h3"/></g>
+  <text x="1016" y="208" font-size="13" fill="#7a837e">Employees</text>
+  <text x="1016" y="234" font-size="22" font-weight="700" fill="#1f2a24">22</text>
+  <text x="968" y="256" font-size="12" fill="#7a837e">across 6 publishers</text>
+  <!-- recent sales -->
+  <rect x="240" y="286" width="560" height="448" rx="14" fill="#ffffff" stroke="#e4e7e5"/>
+  <text x="264" y="318" font-size="15" font-weight="700" fill="#1f2a24">Recent sales</text>
+  <text x="374" y="318" font-size="13" fill="#7a837e">35 lines</text>
+  <text x="776" y="318" font-size="13" font-weight="600" text-anchor="end" fill="#1f4d3a">View all sales →</text>
+  <rect x="241" y="336" width="558" height="32" rx="0" fill="#f6f8f7"/>
+  <path d="M240 336.5h560" stroke="#e4e7e5"/>
+  <path d="M240 367.5h560" stroke="#e4e7e5"/>
+  <text x="264" y="357" font-size="12" font-weight="600" fill="#7a837e">Order #</text>
+  <text x="344" y="357" font-size="12" font-weight="600" fill="#7a837e">Date</text>
+  <text x="444" y="357" font-size="12" font-weight="600" fill="#7a837e">Store</text>
+  <text x="596" y="357" font-size="12" font-weight="600" fill="#7a837e">Title</text>
+  <text x="776" y="357" font-size="12" font-weight="600" text-anchor="end" fill="#7a837e">Qty</text>
+  <text x="264" y="392" font-size="13" font-weight="600" fill="#1f2a24">N0017</text>
+  <text x="344" y="392" font-size="13" fill="#7a837e">28 Aug 2026</text>
+  <text x="444" y="392" font-size="13" fill="#1f2a24">Portland Book Nook</text>
+  <text x="596" y="392" font-size="13" fill="#1f2a24">Cloud Autonomous:…</text>
+  <text x="776" y="392" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">32</text>
+  <path d="M256 405.5h528" stroke="#e4e7e5"/>
+  <text x="264" y="430" font-size="13" font-weight="600" fill="#1f2a24">N0015</text>
+  <text x="344" y="430" font-size="13" fill="#7a837e">27 Aug 2026</text>
+  <text x="444" y="430" font-size="13" fill="#1f2a24">Boise Book Nook</text>
+  <text x="596" y="430" font-size="13" fill="#1f2a24">Terraform Vector:…</text>
+  <text x="776" y="430" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">34</text>
+  <path d="M256 443.5h528" stroke="#e4e7e5"/>
+  <text x="264" y="468" font-size="13" font-weight="600" fill="#1f2a24">N0019</text>
+  <text x="344" y="468" font-size="13" fill="#7a837e">24 Aug 2026</text>
+  <text x="444" y="468" font-size="13" fill="#1f2a24">Boise Book Nook</text>
+  <text x="596" y="468" font-size="13" fill="#1f2a24">Vector Retrieval:…</text>
+  <text x="776" y="468" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">10</text>
+  <path d="M256 481.5h528" stroke="#e4e7e5"/>
+  <text x="264" y="506" font-size="13" font-weight="600" fill="#1f2a24">N0008</text>
+  <text x="344" y="506" font-size="13" fill="#7a837e">24 Aug 2026</text>
+  <text x="444" y="506" font-size="13" fill="#1f2a24">Boise Book Nook</text>
+  <text x="596" y="506" font-size="13" fill="#1f2a24">Retrieval Vector:…</text>
+  <text x="776" y="506" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">6</text>
+  <path d="M256 519.5h528" stroke="#e4e7e5"/>
+  <text x="264" y="544" font-size="13" font-weight="600" fill="#1f2a24">N0001</text>
+  <text x="344" y="544" font-size="13" fill="#7a837e">16 Aug 2026</text>
+  <text x="444" y="544" font-size="13" fill="#1f2a24">Austin Book Nook</text>
+  <text x="596" y="544" font-size="13" fill="#1f2a24">Retrieval Vector:…</text>
+  <text x="776" y="544" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">24</text>
+  <path d="M256 557.5h528" stroke="#e4e7e5"/>
+  <text x="264" y="582" font-size="13" font-weight="600" fill="#1f2a24">N0009</text>
+  <text x="344" y="582" font-size="13" fill="#7a837e">4 Aug 2026</text>
+  <text x="444" y="582" font-size="13" fill="#1f2a24">Portland Book Nook</text>
+  <text x="596" y="582" font-size="13" fill="#1f2a24">Terraform Vector:…</text>
+  <text x="776" y="582" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">42</text>
+  <path d="M256 595.5h528" stroke="#e4e7e5"/>
+  <text x="264" y="620" font-size="13" font-weight="600" fill="#1f2a24">N0020</text>
+  <text x="344" y="620" font-size="13" fill="#7a837e">24 Jul 2026</text>
+  <text x="444" y="620" font-size="13" fill="#1f2a24">Boise Book Nook</text>
+  <text x="596" y="620" font-size="13" fill="#1f2a24">Agile Data: A Fiel…</text>
+  <text x="776" y="620" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">36</text>
+  <path d="M256 633.5h528" stroke="#e4e7e5"/>
+  <text x="264" y="658" font-size="13" font-weight="600" fill="#1f2a24">N0005</text>
+  <text x="344" y="658" font-size="13" fill="#7a837e">21 Jul 2026</text>
+  <text x="444" y="658" font-size="13" fill="#1f2a24">Boise Book Nook</text>
+  <text x="596" y="658" font-size="13" fill="#1f2a24">Cloud Autonomous:…</text>
+  <text x="776" y="658" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">26</text>
+  <path d="M256 671.5h528" stroke="#e4e7e5"/>
+  <text x="264" y="696" font-size="13" font-weight="600" fill="#1f2a24">N0011</text>
+  <text x="344" y="696" font-size="13" fill="#7a837e">19 Jul 2026</text>
+  <text x="444" y="696" font-size="13" fill="#1f2a24">Austin Book Nook</text>
+  <text x="596" y="696" font-size="13" fill="#1f2a24">Vector Retrieval:…</text>
+  <text x="776" y="696" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">31</text>
+  <!-- discounts -->
+  <rect x="816" y="286" width="352" height="216" rx="14" fill="#ffffff" stroke="#e4e7e5"/>
+  <text x="840" y="318" font-size="15" font-weight="700" fill="#1f2a24">Discounts</text>
+  <text x="922" y="318" font-size="13" fill="#7a837e">7</text>
+  <text x="1144" y="318" font-size="13" font-weight="600" text-anchor="end" fill="#1f4d3a">View all →</text>
+  <path d="M816 334.5h352" stroke="#e4e7e5"/>
+  <rect x="840" y="350" width="32" height="32" rx="8" fill="#eef6f1"/>
+  <g transform="translate(846 356)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 2H17a1 1 0 0 1 1 1v6.5l-8.5 8.5L2 10.5z"/><circle cx="13.5" cy="6.5" r="1.4"/></g>
+  <text x="884" y="364" font-size="14" font-weight="600" fill="#1f2a24">Initial Customer</text>
+  <text x="884" y="381" font-size="12" fill="#7a837e">All stores · Any quantity</text>
+  <text x="1144" y="372" font-size="16" font-weight="700" text-anchor="end" fill="#1f4d3a">10.5%</text>
+  <rect x="840" y="400" width="32" height="32" rx="8" fill="#eef6f1"/>
+  <g transform="translate(846 406)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 2H17a1 1 0 0 1 1 1v6.5l-8.5 8.5L2 10.5z"/><circle cx="13.5" cy="6.5" r="1.4"/></g>
+  <text x="884" y="414" font-size="14" font-weight="600" fill="#1f2a24">Initial Customer</text>
+  <text x="884" y="431" font-size="12" fill="#7a837e">All stores · Any quantity</text>
+  <text x="1144" y="422" font-size="16" font-weight="700" text-anchor="end" fill="#1f4d3a">8%</text>
+  <rect x="840" y="450" width="32" height="32" rx="8" fill="#eef6f1"/>
+  <g transform="translate(846 456)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 2H17a1 1 0 0 1 1 1v6.5l-8.5 8.5L2 10.5z"/><circle cx="13.5" cy="6.5" r="1.4"/></g>
+  <text x="884" y="464" font-size="14" font-weight="600" fill="#1f2a24">Volume Discount</text>
+  <text x="884" y="481" font-size="12" fill="#7a837e">All stores · Qty 100 – 1,000</text>
+  <text x="1144" y="472" font-size="16" font-weight="700" text-anchor="end" fill="#1f4d3a">6.7%</text>
+  <!-- publishers -->
+  <rect x="816" y="518" width="352" height="216" rx="14" fill="#ffffff" stroke="#e4e7e5"/>
+  <text x="840" y="550" font-size="15" font-weight="700" fill="#1f2a24">Publishers</text>
+  <text x="1144" y="550" font-size="13" font-weight="600" text-anchor="end" fill="#1f4d3a">View all →</text>
+  <path d="M816 566.5h352" stroke="#e4e7e5"/>
+  <text x="840" y="590" font-size="12" font-weight="600" fill="#7a837e">Publisher</text>
+  <text x="1060" y="590" font-size="12" font-weight="600" text-anchor="end" fill="#7a837e">Titles</text>
+  <text x="1144" y="590" font-size="12" font-weight="600" text-anchor="end" fill="#7a837e">Staff</text>
+  <text x="840" y="616" font-size="13" font-weight="500" fill="#1f2a24">Binnet &amp; Hardley</text>
+  <text x="1060" y="616" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">7</text>
+  <text x="1144" y="616" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">4</text>
+  <text x="840" y="641" font-size="13" font-weight="500" fill="#1f2a24">Algodata Infosystems</text>
+  <text x="1060" y="641" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">6</text>
+  <text x="1144" y="641" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">4</text>
+  <text x="840" y="666" font-size="13" font-weight="500" fill="#1f2a24">New Moon Books</text>
+  <text x="1060" y="666" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">5</text>
+  <text x="1144" y="666" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">4</text>
+  <text x="840" y="691" font-size="13" font-weight="500" fill="#1f2a24">Quantum Press</text>
+  <text x="1060" y="691" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">4</text>
+  <text x="1144" y="691" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">3</text>
+  <text x="840" y="716" font-size="13" font-weight="500" fill="#1f2a24">Data Press</text>
+  <text x="1060" y="716" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">3</text>
+  <text x="1144" y="716" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">6</text>
+</svg>

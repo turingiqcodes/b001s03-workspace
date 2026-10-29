@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" font-family="'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-labelledby="db-title">
+  <title id="db-title">Digital Library – Library</title>
+  <rect width="1200" height="800" fill="#eef6f1"/>
+  <!-- header -->
+  <rect width="1200" height="80" fill="#ffffff"/>
+  <path d="M0 80.5h1200" stroke="#e4e7e5"/>
+  <rect x="24" y="22" width="36" height="36" rx="9" fill="#1f4d3a"/>
+  <path d="M42 33c-3-2-7-2.6-10-2.4v16c3-.2 7 .4 10 2.4 3-2 7-2.6 10-2.4v-16c-3-.2-7 .4-10 2.4z" fill="#ffffff"/>
+  <path d="M42 33v16" stroke="#1f4d3a" stroke-width="1.5"/>
+  <text x="72" y="47" font-size="21" font-weight="700" fill="#1f2a24">Digital Library</text>
+  <rect x="250" y="20" width="540" height="40" rx="10" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <g transform="translate(264 30)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="6"/><path d="M13 13l5 5"/></g>
+  <text x="294" y="45" font-size="15" fill="#7a837e">Search books or authors</text>
+  <rect x="802" y="20" width="104" height="40" rx="10" fill="#ffffff" stroke="#e4e7e5"/>
+  <g transform="translate(818 30)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h8M15 5h2M3 10h2M9 10h8M3 15h10"/><circle cx="13" cy="5" r="2"/><circle cx="7" cy="10" r="2"/><circle cx="15" cy="15" r="2"/></g>
+  <text x="846" y="45" font-size="15" font-weight="600" fill="#1f2a24">Filter</text>
+  <!-- theme toggle -->
+  <rect x="958" y="22" width="84" height="36" rx="18" fill="#f6f8f7" stroke="#e4e7e5"/>
+  <circle cx="978" cy="40" r="14" fill="#1f4d3a"/>
+  <g stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"><circle cx="978" cy="40" r="4" fill="none"/><path d="M978 31.5v2M978 46.5v2M969.5 40h2M984.5 40h2M972 34l1.4 1.4M982.6 44.6L984 46M972 46l1.4-1.4M982.6 35.4L984 34"/></g>
+  <path d="M1026 33a7 7 0 1 0 6 10.5 5.6 5.6 0 0 1-6-10.5z" fill="none" stroke="#7a837e" stroke-width="1.6" stroke-linejoin="round"/>
+  <!-- profile -->
+  <path d="M1058 24v32" stroke="#e4e7e5"/>
+  <circle cx="1090" cy="40" r="18" fill="#dcefe5"/>
+  <circle cx="1090" cy="35" r="6" fill="#1f4d3a"/><path d="M1078.5 51a12 9 0 0 1 23 0" fill="#1f4d3a"/>
+  <circle cx="1090" cy="40" r="18" fill="none" stroke="#a8cbb8" stroke-width="1.5"/>
+  <text x="1116" y="45" font-size="15" font-weight="600" fill="#1f2a24">Admin</text>
+  <circle cx="1104" cy="54" r="8" fill="#ffffff"/><path d="M1104 48.5l4.5 1.8v3c0 2.6-1.9 4.4-4.5 5.2-2.6-.8-4.5-2.6-4.5-5.2v-3z" fill="#e0a83a"/>
+  <g transform="translate(1166 31)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8l4 4 4-4"/></g>
+  <!-- sidebar (admin) -->
+  <rect x="0" y="81" width="210" height="719" rx="0" fill="#ffffff"/>
+  <path d="M210.5 81v719" stroke="#e4e7e5"/>
+  <text x="28" y="118" font-size="11" font-weight="700" fill="#7a837e" letter-spacing="1.2">MENU</text>
+  <text x="28" y="347" font-size="11" font-weight="700" fill="#7a837e" letter-spacing="1.2">ADMIN</text>
+  <g transform="translate(28 147)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="7" height="7" rx="1.5"/><rect x="11" y="2" width="7" height="7" rx="1.5"/><rect x="2" y="11" width="7" height="7" rx="1.5"/><rect x="11" y="11" width="7" height="7" rx="1.5"/></g>
+  <text x="60" y="162" font-size="15" font-weight="500" fill="#1f2a24">Dashboard</text>
+  <rect x="14" y="182" width="182" height="42" rx="8" fill="#dcefe5"/>
+  <rect x="0" y="188" width="4" height="30" rx="2" fill="#1f4d3a"/>
+  <g transform="translate(28 193)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 5C8 3.5 5.5 3 3 3v12c2.5 0 5 .5 7 2 2-1.5 4.5-2 7-2V3c-2.5 0-5 .5-7 2z"/><path d="M10 5v12"/></g>
+  <text x="60" y="208" font-size="15" font-weight="600" fill="#1f4d3a">Library</text>
+  <g transform="translate(28 239)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><path d="M1 17c0-3 2.7-5 6-5s6 2 6 5"/><circle cx="14.5" cy="6" r="2.5"/><path d="M15 11c2.5 0 4.5 1.6 4.5 4.5"/></g>
+  <text x="60" y="254" font-size="15" font-weight="500" fill="#1f2a24">Community</text>
+  <g transform="translate(28 285)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2L4 11h6l-1 7 7-9h-6z"/></g>
+  <text x="60" y="300" font-size="15" font-weight="500" fill="#1f2a24">AI Intelligence</text>
+  <g transform="translate(172 285)" fill="none" stroke="#7a837e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8l4 4 4-4"/></g>
+  <g transform="translate(28 376)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h2.5l2 10h9.5l2-7H5.5"/><circle cx="8" cy="16.5" r="1.3"/><circle cx="15" cy="16.5" r="1.3"/></g>
+  <text x="60" y="391" font-size="15" font-weight="500" fill="#1f2a24">Sales</text>
+  <g transform="translate(28 422)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 2H17a1 1 0 0 1 1 1v6.5l-8.5 8.5L2 10.5z"/><circle cx="13.5" cy="6.5" r="1.4"/></g>
+  <text x="60" y="437" font-size="15" font-weight="500" fill="#1f2a24">Discounts</text>
+  <g transform="translate(28 468)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7l1.5-4.5h13L18 7"/><path d="M2 7c0 1.5 1.3 2.5 2.7 2.5S7.3 8.5 7.3 7c0 1.5 1.3 2.5 2.7 2.5s2.7-1 2.7-2.5c0 1.5 1.3 2.5 2.6 2.5S18 8.5 18 7M3.5 9.5V17h13V9.5M8 17v-4h4v4"/></g>
+  <text x="60" y="483" font-size="15" font-weight="500" fill="#1f2a24">Stores</text>
+  <g transform="translate(28 514)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18V5l7-3 7 3v13"/><path d="M1.5 18h17M7 8h2M11 8h2M7 12h2M11 12h2"/></g>
+  <text x="60" y="529" font-size="15" font-weight="500" fill="#1f2a24">Publishers</text>
+  <g transform="translate(28 560)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="16" height="13" rx="2"/><circle cx="7.5" cy="10" r="2.2"/><path d="M4 15c.6-1.6 2-2.4 3.5-2.4s2.9.8 3.5 2.4M12.5 9h3.5M12.5 12h3"/></g>
+  <text x="60" y="575" font-size="15" font-weight="500" fill="#1f2a24">Employees</text>
+  <g transform="translate(28 606)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="12" r="4"/><path d="M10 9l7-7M14 5l2.5 2.5M12 7l2 2"/></g>
+  <text x="60" y="621" font-size="15" font-weight="500" fill="#1f2a24">Author Access</text>
+  <path d="M14 656.5h182" stroke="#e4e7e5"/>
+  <g transform="translate(28 676)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="2.6"/><circle cx="10" cy="10" r="6.5"/><path d="M10 1v2M10 17v2M1 10h2M17 10h2M3.6 3.6l1.4 1.4M15 15l1.4 1.4M3.6 16.4L5 15M15 5l1.4-1.4"/></g>
+  <text x="60" y="691" font-size="15" font-weight="500" fill="#1f2a24">Settings</text>
+  <g transform="translate(28 722)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"/><path d="M7.6 7.8a2.5 2.5 0 1 1 3.4 2.4c-.7.3-1 .8-1 1.6"/><path d="M10 14.6v.1"/></g>
+  <text x="60" y="737" font-size="15" font-weight="500" fill="#1f2a24">Help</text>
+  <!-- heading -->
+  <g transform="translate(240 112)" fill="none" stroke="#1f2a24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 10H4M9 5l-5 5 5 5"/></g>
+  <text x="272" y="129" font-size="22" font-weight="700" fill="#1f2a24">Library <tspan font-weight="500" fill="#7a837e">(26)</tspan></text>
+  <text x="1168" y="128" font-size="13" text-anchor="end" fill="#7a837e">Admin  /  <tspan fill="#1f4d3a" font-weight="600">Library</tspan></text>
+  <rect x="864" y="104" width="164" height="36" rx="8" fill="#ffffff" stroke="#e4e7e5"/>
+  <g transform="translate(878 113.0) scale(0.9)" fill="none" stroke="#1f4d3a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h14M8 5V3h4v2M5 5l1 12h8l1-12M8.5 8.5v5.5M11.5 8.5v5.5"/></g>
+  <text x="902" y="127.0" font-size="14" font-weight="600" fill="#1f4d3a">Removed books</text>
+  <rect x="1040" y="104" width="128" height="36" rx="8" fill="#1f4d3a"/>
+  <g transform="translate(1054 113.0) scale(0.9)" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 4v12M4 10h12"/></g>
+  <text x="1078" y="127.0" font-size="14" font-weight="600" fill="#ffffff">Add Book</text>
+  <rect x="240" y="156" width="70" height="30" rx="15" fill="#1f4d3a" stroke="#1f4d3a"/>
+  <text x="275.2" y="176" font-size="13" font-weight="600" text-anchor="middle" fill="#ffffff">All 26</text>
+  <rect x="320" y="156" width="100" height="30" rx="15" fill="#ffffff" stroke="#e4e7e5"/>
+  <text x="370.0" y="176" font-size="13" font-weight="600" text-anchor="middle" fill="#1f2a24">Business 8</text>
+  <rect x="430" y="156" width="107" height="30" rx="15" fill="#ffffff" stroke="#e4e7e5"/>
+  <text x="483.7" y="176" font-size="13" font-weight="600" text-anchor="middle" fill="#1f2a24">Computing 5</text>
+  <rect x="547" y="156" width="115" height="30" rx="15" fill="#ffffff" stroke="#e4e7e5"/>
+  <text x="604.4" y="176" font-size="13" font-weight="600" text-anchor="middle" fill="#1f2a24">Psychology 5</text>
+  <rect x="672" y="156" width="144" height="30" rx="15" fill="#ffffff" stroke="#e4e7e5"/>
+  <text x="744.2" y="176" font-size="13" font-weight="600" text-anchor="middle" fill="#1f2a24">Modern cooking 3</text>
+  <rect x="826" y="156" width="181" height="30" rx="15" fill="#ffffff" stroke="#e4e7e5"/>
+  <text x="916.7" y="176" font-size="13" font-weight="600" text-anchor="middle" fill="#1f2a24">Traditional cooking 3</text>
+  <rect x="1017" y="156" width="107" height="30" rx="15" fill="#ffffff" stroke="#e4e7e5"/>
+  <text x="1070.7" y="176" font-size="13" font-weight="600" text-anchor="middle" fill="#1f2a24">Undecided 2</text>
+  <!-- title: MC3021 -->
+  <rect x="240" y="206" width="214" height="196" rx="12" fill="#dcefe5"/>
+  <rect x="298" y="232" width="104" height="152" rx="4" fill="#1f2a24" opacity=".12"/>
+  <rect x="295" y="228" width="104" height="152" rx="4" fill="#e8a35c"/>
+  <rect x="295" y="228" width="8" height="152" rx="3" fill="#000000" opacity=".15"/>
+  <text x="351.0" y="272" font-size="12" font-weight="800" text-anchor="middle" fill="#1f2a24" letter-spacing=".5">THE GOURMET</text>
+  <text x="351.0" y="289" font-size="12" font-weight="800" text-anchor="middle" fill="#1f2a24" letter-spacing=".5">MICROWAVE</text>
+  <rect x="333.0" y="350" width="36" height="2" rx="0" fill="#1f2a24" opacity=".7"/>
+  <text x="351.0" y="366" font-size="8" font-weight="600" text-anchor="middle" fill="#1f2a24" letter-spacing="1" opacity=".85">A. YOKOMOTO</text>
+  <text x="242" y="428" font-size="15" font-weight="600" fill="#1f2a24">The Gourmet Microwave</text>
+  <text x="242" y="448" font-size="13" fill="#7a837e">Akiko Yokomoto, Michel…</text>
+  <text x="452" y="448" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">$2.99</text>
+  <!-- title: BU2075 -->
+  <rect x="478" y="206" width="214" height="196" rx="12" fill="#dcefe5"/>
+  <rect x="536" y="232" width="104" height="152" rx="4" fill="#1f2a24" opacity=".12"/>
+  <rect x="533" y="228" width="104" height="152" rx="4" fill="#2d6a4f"/>
+  <rect x="533" y="228" width="8" height="152" rx="3" fill="#000000" opacity=".15"/>
+  <text x="589.0" y="272" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">YOU CAN</text>
+  <text x="589.0" y="289" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">COMBAT</text>
+  <text x="589.0" y="306" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">COMPUTER</text>
+  <text x="589.0" y="323" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">STRESS!</text>
+  <rect x="571.0" y="350" width="36" height="2" rx="0" fill="#f2c66d" opacity=".7"/>
+  <text x="589.0" y="366" font-size="8" font-weight="600" text-anchor="middle" fill="#f2c66d" letter-spacing="1" opacity=".85">M. GREEN</text>
+  <text x="480" y="428" font-size="15" font-weight="600" fill="#1f2a24">You Can Combat Computer St…</text>
+  <text x="480" y="448" font-size="13" fill="#7a837e">Marjorie Green</text>
+  <text x="690" y="448" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">$2.99</text>
+  <!-- title: TC4203 -->
+  <rect x="716" y="206" width="214" height="196" rx="12" fill="#dcefe5"/>
+  <rect x="774" y="232" width="104" height="152" rx="4" fill="#1f2a24" opacity=".12"/>
+  <rect x="771" y="228" width="104" height="152" rx="4" fill="#f2c66d"/>
+  <rect x="771" y="228" width="8" height="152" rx="3" fill="#000000" opacity=".15"/>
+  <text x="827.0" y="272" font-size="12" font-weight="800" text-anchor="middle" fill="#1f2a24" letter-spacing=".5">FIFTY YEARS</text>
+  <text x="827.0" y="289" font-size="12" font-weight="800" text-anchor="middle" fill="#1f2a24" letter-spacing=".5">IN</text>
+  <text x="827.0" y="306" font-size="12" font-weight="800" text-anchor="middle" fill="#1f2a24" letter-spacing=".5">BUCKINGHAM</text>
+  <text x="827.0" y="323" font-size="12" font-weight="800" text-anchor="middle" fill="#1f2a24" letter-spacing=".5">PALACE…</text>
+  <rect x="809.0" y="350" width="36" height="2" rx="0" fill="#1f2a24" opacity=".7"/>
+  <text x="827.0" y="366" font-size="8" font-weight="600" text-anchor="middle" fill="#1f2a24" letter-spacing="1" opacity=".85">R. BLOTCHET-HALLS</text>
+  <text x="718" y="428" font-size="15" font-weight="600" fill="#1f2a24">Fifty Years in Buckingham…</text>
+  <text x="718" y="448" font-size="13" fill="#7a837e">Reginald Blotchet-Halls</text>
+  <text x="928" y="448" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">$11.95</text>
+  <!-- title: PC1035 -->
+  <rect x="954" y="206" width="214" height="196" rx="12" fill="#dcefe5"/>
+  <rect x="1012" y="232" width="104" height="152" rx="4" fill="#1f2a24" opacity=".12"/>
+  <rect x="1009" y="228" width="104" height="152" rx="4" fill="#26415e"/>
+  <rect x="1009" y="228" width="8" height="152" rx="3" fill="#000000" opacity=".15"/>
+  <text x="1065.0" y="272" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">BUT IS IT</text>
+  <text x="1065.0" y="289" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">USER</text>
+  <text x="1065.0" y="306" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">FRIENDLY?</text>
+  <rect x="1047.0" y="350" width="36" height="2" rx="0" fill="#f2c66d" opacity=".7"/>
+  <text x="1065.0" y="366" font-size="8" font-weight="600" text-anchor="middle" fill="#f2c66d" letter-spacing="1" opacity=".85">C. CARSON</text>
+  <text x="956" y="428" font-size="15" font-weight="600" fill="#1f2a24">But Is It User Friendly?</text>
+  <text x="956" y="448" font-size="13" fill="#7a837e">Cheryl Carson</text>
+  <text x="1166" y="448" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">$22.95</text>
+  <!-- title: NT0004 -->
+  <rect x="240" y="490" width="214" height="196" rx="12" fill="#dcefe5"/>
+  <rect x="298" y="516" width="104" height="152" rx="4" fill="#1f2a24" opacity=".12"/>
+  <rect x="295" y="512" width="104" height="152" rx="4" fill="#2d6a4f"/>
+  <rect x="295" y="512" width="8" height="152" rx="3" fill="#000000" opacity=".15"/>
+  <text x="351.0" y="556" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">AGILE</text>
+  <text x="351.0" y="573" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">AUTONOMOUS</text>
+  <text x="351.0" y="590" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">A FIELD</text>
+  <text x="351.0" y="607" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">GUIDE</text>
+  <rect x="333.0" y="634" width="36" height="2" rx="0" fill="#f2c66d" opacity=".7"/>
+  <text x="351.0" y="650" font-size="8" font-weight="600" text-anchor="middle" fill="#f2c66d" letter-spacing="1" opacity=".85">R. PILLAI</text>
+  <text x="242" y="712" font-size="15" font-weight="600" fill="#1f2a24">Agile Autonomous: A Field…</text>
+  <text x="242" y="732" font-size="13" fill="#7a837e">Ravi Pillai</text>
+  <text x="452" y="732" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">$46.20</text>
+  <!-- title: BU1032 -->
+  <rect x="478" y="490" width="214" height="196" rx="12" fill="#dcefe5"/>
+  <rect x="536" y="516" width="104" height="152" rx="4" fill="#1f2a24" opacity=".12"/>
+  <rect x="533" y="512" width="104" height="152" rx="4" fill="#2d6a4f"/>
+  <rect x="533" y="512" width="8" height="152" rx="3" fill="#000000" opacity=".15"/>
+  <text x="589.0" y="556" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">THE BUSY</text>
+  <text x="589.0" y="573" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">EXECUTIVE'S</text>
+  <text x="589.0" y="590" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">DATABASE</text>
+  <text x="589.0" y="607" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">GUIDE</text>
+  <rect x="571.0" y="634" width="36" height="2" rx="0" fill="#f2c66d" opacity=".7"/>
+  <text x="589.0" y="650" font-size="8" font-weight="600" text-anchor="middle" fill="#f2c66d" letter-spacing="1" opacity=".85">A. BENNET</text>
+  <text x="480" y="712" font-size="15" font-weight="600" fill="#1f2a24">The Busy Executive's Datab…</text>
+  <text x="480" y="732" font-size="13" fill="#7a837e">Abraham Bennet, Marjori…</text>
+  <text x="690" y="732" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">$19.99</text>
+  <!-- title: BU7832 -->
+  <rect x="716" y="490" width="214" height="196" rx="12" fill="#dcefe5"/>
+  <rect x="774" y="516" width="104" height="152" rx="4" fill="#1f2a24" opacity=".12"/>
+  <rect x="771" y="512" width="104" height="152" rx="4" fill="#2d6a4f"/>
+  <rect x="771" y="512" width="8" height="152" rx="3" fill="#000000" opacity=".15"/>
+  <text x="827.0" y="556" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">STRAIGHT</text>
+  <text x="827.0" y="573" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">TALK ABOUT</text>
+  <text x="827.0" y="590" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">COMPUTERS</text>
+  <rect x="809.0" y="634" width="36" height="2" rx="0" fill="#f2c66d" opacity=".7"/>
+  <text x="827.0" y="650" font-size="8" font-weight="600" text-anchor="middle" fill="#f2c66d" letter-spacing="1" opacity=".85">D. STRAIGHT</text>
+  <text x="718" y="712" font-size="15" font-weight="600" fill="#1f2a24">Straight Talk About Comput…</text>
+  <text x="718" y="732" font-size="13" fill="#7a837e">Dean Straight, Ann Dull</text>
+  <text x="928" y="732" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">$19.99</text>
+  <!-- title: PC8888 -->
+  <rect x="954" y="490" width="214" height="196" rx="12" fill="#dcefe5"/>
+  <rect x="1012" y="516" width="104" height="152" rx="4" fill="#1f2a24" opacity=".12"/>
+  <rect x="1009" y="512" width="104" height="152" rx="4" fill="#26415e"/>
+  <rect x="1009" y="512" width="8" height="152" rx="3" fill="#000000" opacity=".15"/>
+  <text x="1065.0" y="556" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">SECRETS OF</text>
+  <text x="1065.0" y="573" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">SILICON</text>
+  <text x="1065.0" y="590" font-size="12" font-weight="800" text-anchor="middle" fill="#f2c66d" letter-spacing=".5">VALLEY</text>
+  <rect x="1047.0" y="634" width="36" height="2" rx="0" fill="#f2c66d" opacity=".7"/>
+  <text x="1065.0" y="650" font-size="8" font-weight="600" text-anchor="middle" fill="#f2c66d" letter-spacing="1" opacity=".85"></text>
+  <text x="956" y="712" font-size="15" font-weight="600" fill="#1f2a24">Secrets of Silicon Valley</text>
+  <text x="956" y="732" font-size="13" fill="#7a837e">No author linked</text>
+  <text x="1166" y="732" font-size="13" font-weight="600" text-anchor="end" fill="#1f2a24">$20.00</text>
+</svg>

@@ -1,0 +1,14 @@
+services:
+  github-mcp:
+    build: .
+    image: github-mcp-server:latest
+    ports:
+      - "8000:8000"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      MCP_TRANSPORT: http
+      MCP_HOST: 0.0.0.0
+      MCP_PORT: "8000"
+    restart: unless-stopped
