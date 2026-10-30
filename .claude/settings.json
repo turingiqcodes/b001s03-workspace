@@ -1,0 +1,80 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git status:*)",
+      "Bash(git grep:*)",
+      "Bash(git blame:*)",
+      "Bash(git ls-files:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(git rev-parse:*)",
+      "Bash(git merge-base:*)",
+      "Bash(git branch --list:*)",
+      "Bash(git fetch:*)",
+      "Bash(git remote get-url:*)",
+      "mcp__github__get_pull_request",
+      "mcp__github__get_pull_request_diff",
+      "mcp__github__list_pull_request_files",
+      "mcp__github__list_pull_request_comments",
+      "mcp__github__list_pull_request_reviews",
+      "mcp__github__get_file_contents",
+      "mcp__github__get_repository",
+      "mcp__github__get_repository_commits",
+      "mcp__github__list_repository_files",
+      "mcp__github__list_repository_branches",
+      "mcp__github__get_issue",
+      "mcp__github__list_issues",
+      "mcp__github__search_code",
+      "mcp__github__search_issues",
+      "mcp__github__list_workflow_runs",
+      "mcp__github__get_workflow_run",
+      "mcp__github__list_workflow_run_jobs",
+      "mcp__github__get_workflow_job_logs"
+    ],
+    "deny": [
+      "mcp__github__merge_pull_request",
+      "Bash(gh pr merge:*)",
+      "Read(./**/.env)",
+      "Read(./**/*.tfstate)",
+      "Read(./**/*.tfstate.backup)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|mcp__github__merge_pull_request",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/guard_merge_and_push.py",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit|mcp__github__create_pull_request|mcp__github__update_pull_request|mcp__github__create_pull_request_review|mcp__github__submit_pull_request_review|mcp__github__create_pull_request_comment|mcp__github__create_issue",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/scan_secrets.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/check_python_syntax.py",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}
