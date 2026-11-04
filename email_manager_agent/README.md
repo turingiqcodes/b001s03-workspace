@@ -92,7 +92,7 @@ Edit `.env`:
 | `OLLAMA_THINK` | no | For thinking models such as qwen3: `false` is faster. Leave unset for other models. |
 | `ANTHROPIC_API_KEY`, `CLAUDE_MODEL` | only for Claude | Key from console.anthropic.com, model id e.g. `claude-opus-5-5` |
 | `APPS_SCRIPT_URL` | yes | Web App URL ending in `/exec` (step 2) |
-| `APPS_SCRIPT_SHARED_SECRET` | yes | Printed by `setupSharedSecret()` (step 2) |
+| `APPS_SCRIPT_SHARED_SECRET` | yes | Random secret you generate (step 2); also set as the `BRIDGE_SHARED_SECRET` script property |
 | `USER_TIMEZONE` | recommended | IANA name, e.g. `Asia/Kolkata`. Used for working hours and times without an offset |
 | `CLAUDE_EFFORT`, `CLAUDE_REFUSAL_FALLBACK` | no | Claude only: effort `low`…`max` (default `medium`); server-side fallback on refusals (default `true`) |
 | everything else | no | Limits and working hours; see comments in `.env.example` and the checklist |
@@ -102,8 +102,9 @@ List values use JSON, e.g. `WORK_DAYS=[0,1,2,3,4]`.
 ### 2. Deploy the Google Apps Script bridge
 
 Follow **[docs/APPS_SCRIPT_SETUP.md](docs/APPS_SCRIPT_SETUP.md)**: create the project,
-paste the files, run `setupSharedSecret`, then deploy as a Web App (*Execute as: Me*,
-*Who has access: Anyone*). Copy the URL and the secret into `.env`.
+paste the files, put your secret in `.env` and in the `BRIDGE_SHARED_SECRET` script property,
+run `checkSetup`, then deploy as a Web App (*Execute as: Me*, *Who has access: Anyone*).
+Copy the URL into `.env`.
 
 ### 3. Start the backend
 
@@ -217,7 +218,7 @@ Errors are always `{"error": {"code": "...", "message": "..."}}`, for example `v
 | *Claude model '…' was not found* | Fix `CLAUDE_MODEL`. |
 | *Claude rejected the request … fallbacks* | Set `CLAUDE_REFUSAL_FALLBACK=false`. |
 | *The Google bridge did not return JSON* | The Web App must be deployed with **Who has access: Anyone**, and the URL must end in `/exec`. |
-| *Invalid shared secret* / *not_configured* | Run `setupSharedSecret` again and copy the new value into `.env`. |
+| *Invalid shared secret* / *not_configured* | `APPS_SCRIPT_SHARED_SECRET` in `.env` and the `BRIDGE_SHARED_SECRET` script property must match exactly (no spaces or quotes). Run `checkSetup` to confirm it's set. |
 | *Google did not answer within 30 seconds* | Apps Script was slow. Try again, or raise `BRIDGE_TIMEOUT_SECONDS`. For a failed **write**, check Gmail/Calendar/Drive before retrying, because it may have gone through. |
 | *Google reported an error: … permission* | Re-authorize: run any function in the Apps Script editor. After changing scopes, deploy a new version. |
 | *This session no longer exists* | The backend restarted. Send your request again. |

@@ -22,16 +22,24 @@ then `clasp push`. `.claspignore` keeps the tests out. Don't commit the generate
 
 ## 2. Create the shared secret
 
-1. In the editor, choose the function **setupSharedSecret** in the toolbar and click **Run**.
-2. Google asks you to authorize the project. It's your own script, so if you see "Google hasn't verified this app", choose **Advanced → Go to Email Manager Bridge (unsafe)**. Approve the scopes:
+The secret is kept in your local `.env`. Apps Script can't read that file, so you paste the
+same value into the project's Script properties. Never write it into the `.gs` files, which
+are committed to git.
+
+1. Generate a random secret on your computer:
+   `python3 -c "import secrets; print(secrets.token_hex(32))"`
+2. Put it in `.env` as `APPS_SCRIPT_SHARED_SECRET=<value>`.
+3. In Apps Script, open **Project Settings → Script properties → Add script property**.
+   Set the property to `BRIDGE_SHARED_SECRET` and the value to the same secret, then click **Save script properties**.
+4. In the editor, choose the function **checkSetup** in the toolbar and click **Run**.
+5. Google asks you to authorize the project. It's your own script, so if you see "Google hasn't verified this app", choose **Advanced → Go to Email Manager Bridge (unsafe)**. Approve the scopes:
    - Gmail (`https://mail.google.com/`): read, send, label
    - Calendar: read and change events
    - Drive: search, create folders, save files
    - your email address (shown in the status bar)
-3. Open **Execution log** and copy the printed secret into `.env` as `APPS_SCRIPT_SHARED_SECRET`.
+6. Open **Execution log**. It should say `BRIDGE_SHARED_SECRET is set (64 characters)`.
 
-The secret is stored in **Project Settings → Script properties** as `BRIDGE_SHARED_SECRET`.
-To rotate it, run `setupSharedSecret` again and update `.env`.
+To rotate the secret, generate a new one and update both `.env` and the script property.
 
 ## 3. Deploy as a Web App
 
