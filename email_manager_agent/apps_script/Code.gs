@@ -13,7 +13,13 @@
  * operations for email or files.
  */
 
-var OPERATIONS_ = {
+/**
+ * Operation name -> handler. Built on first use, not at load time: Apps Script runs each
+ * file's top-level code in file order, so a table built here would reference handlers
+ * in Gmail.gs, Calendar.gs and Drive.gs before those files have loaded.
+ */
+function operations_() {
+  return {
   'ping': ping_,
   'gmail.search': gmailSearch_,
   'gmail.read': gmailRead_,
@@ -35,13 +41,15 @@ var OPERATIONS_ = {
   'drive.createFolder': driveCreateFolder_,
   'drive.moveFile': driveMoveFile_,
   'drive.saveAttachments': driveSaveAttachments_
-};
+  };
+}
 
 function doPost(e) {
   try {
     var request = parseRequest_(e);
     checkSecret_(request.secret);
-    var handler = OPERATIONS_.hasOwnProperty(request.operation) ? OPERATIONS_[request.operation] : null;
+    var operations = operations_();
+    var handler = operations.hasOwnProperty(request.operation) ? operations[request.operation] : null;
     if (!handler) {
       throw bridgeError_('unknown_operation', 'Unsupported operation: ' + String(request.operation).slice(0, 60));
     }
@@ -68,11 +76,21 @@ function ping_() {
 }
 
 /**
- * Run once from the Apps Script editor to create a random shared secret.
- * Copy the value from the execution log into APPS_SCRIPT_SHARED_SECRET in .env.
+ * Run from the Apps Script editor after setup. It authorizes the project's scopes and
+ * reports whether the shared secret is configured, without printing it.
+ *
+ * The secret lives in the backend's .env (APPS_SCRIPT_SHARED_SECRET). Copy the same value
+ * into Project Settings > Script properties as BRIDGE_SHARED_SECRET. It is never
+ * written into this code.
  */
-function setupSharedSecret() {
-  var secret = Utilities.getUuid().replace(/-/g, '') + Utilities.getUuid().replace(/-/g, '');
-  PropertiesService.getScriptProperties().setProperty('BRIDGE_SHARED_SECRET', secret);
-  Logger.log('BRIDGE_SHARED_SECRET set. Put this in your .env as APPS_SCRIPT_SHARED_SECRET:\n' + secret);
+function checkSetup() {
+  var secret = PropertiesService.getScriptProperties().getProperty('BRIDGE_SHARED_SECRET');
+  var info = ping_();
+  if (!secret || secret.length < 32) {
+    Logger.log('BRIDGE_SHARED_SECRET is missing or shorter than 32 characters. Add the value of ' +
+      'APPS_SCRIPT_SHARED_SECRET from .env in Project Settings > Script properties.');
+  } else {
+    Logger.log('BRIDGE_SHARED_SECRET is set (' + secret.length + ' characters).');
+  }
+  Logger.log('Running as ' + info.account + ', calendar time zone ' + info.calendar_timezone + '.');
 }

@@ -26,7 +26,7 @@ function parseRequest_(e) {
 function checkSecret_(given) {
   var expected = PropertiesService.getScriptProperties().getProperty('BRIDGE_SHARED_SECRET');
   if (!expected || expected.length < 32) {
-    throw bridgeError_('not_configured', 'The bridge has no shared secret. Run setupSharedSecret() in the Apps Script editor.');
+    throw bridgeError_('not_configured', 'The bridge has no shared secret. Add BRIDGE_SHARED_SECRET (the value of APPS_SCRIPT_SHARED_SECRET in .env) in Project Settings > Script properties.');
   }
   if (typeof given !== 'string' || !constantTimeEquals_(given, expected)) {
     throw bridgeError_('unauthorized', 'Invalid shared secret.');
