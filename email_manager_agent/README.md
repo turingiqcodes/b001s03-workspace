@@ -5,8 +5,10 @@ requests in plain language ("find unread emails from today", "move my 3pm to Thu
 "save the invoice attachments to Drive"), a language model decides which tools to use, and
 **nothing is sent, scheduled or changed until you approve it** in the app.
 
-The model runs **locally with [Ollama](https://ollama.com)** by default (free, and your
-email text stays on your computer). You can switch to the Claude API with `LLM_PROVIDER=claude`.
+The model can be **Groq's free API** (`LLM_PROVIDER=openai`, what `.env.example` is set
+up for), **a local model with [Ollama](https://ollama.com)** (`LLM_PROVIDER=ollama`, the
+code default; email text stays on your computer), or the **Claude API**
+(`LLM_PROVIDER=claude`). With Groq or Claude, email text is sent to that provider.
 
 > The SRS v1.0 was not available when this was built. Values the SRS would normally fix
 > (step limits, timeouts, working hours, attachment size, …) are documented as **assumed**
@@ -19,7 +21,7 @@ email text stays on your computer). You can switch to the Claude API with `LLM_P
 Browser (React, localhost:5173)
    │  /api/*  (Vite proxy)
    ▼
-FastAPI backend (127.0.0.1:8000) ── Ollama on this computer (default) or Claude API
+FastAPI backend (127.0.0.1:8000) ── Ollama on this computer (default), Claude API or Groq/OpenAI-compatible API
    │  runs read tools now; turns write tools into pending approvals
    ▼
 Google Apps Script Web App (runs as you, shared secret)
@@ -40,7 +42,7 @@ email_manager_agent/
 │   │   ├── config.py       all settings and limits (.env)
 │   │   ├── api/routes.py   /api/status, /api/prompt, /api/confirm, /api/reset
 │   │   ├── schemas.py      request/response models
-│   │   ├── agent/          Ollama and Claude clients, system prompt, tool registry, agent loop
+│   │   ├── agent/          Ollama, Claude and OpenAI-compatible (Groq) clients, system prompt, tool registry, agent loop
 │   │   ├── services/       bridge client, Gmail, Calendar, Drive, availability logic
 │   │   ├── approvals.py    pending-operation lifecycle
 │   │   └── sessions.py     in-memory sessions
@@ -55,9 +57,18 @@ email_manager_agent/
 ## Setup
 
 Requirements: **Python 3.10+**, **Node.js 18+** (20 or 22 recommended), a Google account,
-and **Ollama** (or an Anthropic API key if you choose Claude).
+and one model provider: a **Groq API key** (what `.env.example` is set up for), **Ollama**,
+or an Anthropic API key.
 
-### 0. Install Ollama and a model
+### 0. Choose a model provider
+
+**Groq (set up in `.env.example`, free, nothing to install):** create a key at
+<https://console.groq.com/keys> and put it in `.env` as `OPENAI_API_KEY`. Keep
+`OPENAI_MAX_TOKENS=2048`: the free tier allows 8,000 tokens per minute, and Groq counts the
+reply limit against it up front. Short rate limits are retried automatically, so some
+answers take up to ~30 seconds. Email content is sent to Groq.
+
+**Ollama (local, email stays on your computer):** set `LLM_PROVIDER=ollama` in `.env`, then:
 
 1. Install Ollama from <https://ollama.com/download> (Windows, macOS, Linux). It runs in the background on port 11434.
 2. Pull a model that **supports tool calling**:
@@ -83,16 +94,19 @@ Edit `.env`:
 
 | Variable | Required | What it is |
 |---|---|---|
-| `LLM_PROVIDER` | no | `ollama` (default) or `claude` |
+| `LLM_PROVIDER` | no | `ollama` (default), `claude`, or `openai` (Groq or another OpenAI-compatible API) |
 | `OLLAMA_MODEL` | yes, for Ollama | The model you pulled, e.g. `qwen3:8b`. There is no built-in default. |
 | `OLLAMA_BASE_URL` | no | Default `http://127.0.0.1:11434` |
 | `OLLAMA_NUM_CTX` | no | Context window, default 16384 tokens. Ollama's own default is too small for this app. |
 | `OLLAMA_TIMEOUT_SECONDS` | no | Default 600. Raise it on slow machines. |
 | `OLLAMA_KEEP_ALIVE` | no | How long the model stays loaded between requests (default `30m`). Follow-up requests are much faster while it stays loaded. |
 | `OLLAMA_THINK` | no | For thinking models such as qwen3: `false` is faster. Leave unset for other models. |
+| `OPENAI_API_KEY`, `OPENAI_MODEL` | only for `openai` | For Groq: key from console.groq.com/keys, model with tool calling, e.g. `openai/gpt-oss-120b` |
+| `OPENAI_BASE_URL` | no | Default `https://api.groq.com/openai/v1` (Groq). Use `https://api.openai.com/v1` for OpenAI. |
+| `OPENAI_MAX_TOKENS`, `OPENAI_TIMEOUT_SECONDS` | no | Reply length limit (default 4096) and timeout (default 120) |
 | `ANTHROPIC_API_KEY`, `CLAUDE_MODEL` | only for Claude | Key from console.anthropic.com, model id e.g. `claude-opus-5-5` |
 | `APPS_SCRIPT_URL` | yes | Web App URL ending in `/exec` (step 2) |
-| `APPS_SCRIPT_SHARED_SECRET` | yes | Printed by `setupSharedSecret()` (step 2) |
+| `APPS_SCRIPT_SHARED_SECRET` | yes | Random secret you generate (step 2); also set as the `BRIDGE_SHARED_SECRET` script property |
 | `USER_TIMEZONE` | recommended | IANA name, e.g. `Asia/Kolkata`. Used for working hours and times without an offset |
 | `CLAUDE_EFFORT`, `CLAUDE_REFUSAL_FALLBACK` | no | Claude only: effort `low`…`max` (default `medium`); server-side fallback on refusals (default `true`) |
 | everything else | no | Limits and working hours; see comments in `.env.example` and the checklist |
@@ -102,8 +116,9 @@ List values use JSON, e.g. `WORK_DAYS=[0,1,2,3,4]`.
 ### 2. Deploy the Google Apps Script bridge
 
 Follow **[docs/APPS_SCRIPT_SETUP.md](docs/APPS_SCRIPT_SETUP.md)**: create the project,
-paste the files, run `setupSharedSecret`, then deploy as a Web App (*Execute as: Me*,
-*Who has access: Anyone*). Copy the URL and the secret into `.env`.
+paste the files, put your secret in `.env` and in the `BRIDGE_SHARED_SECRET` script property,
+run `checkSetup`, then deploy as a Web App (*Execute as: Me*, *Who has access: Anyone*).
+Copy the URL into `.env`.
 
 ### 3. Start the backend
 
@@ -130,7 +145,7 @@ npm run dev                          # serves http://localhost:5173
 ### 5. Open the app
 
 Go to **<http://localhost:5173>**. The status bar shows whether the model and the Google
-bridge are configured. Click **Check connection** to ping Ollama (and check the model is
+bridge are configured. Click **Check connection** to ping the model (for Ollama, it also checks the model is
 pulled) and Google.
 
 ## Using it
@@ -158,7 +173,7 @@ Sessions are kept in memory only. Restarting the backend forgets them.
 ## Tests
 
 ```bash
-# Backend: 138 tests, no network (Ollama, Claude and Google are faked)
+# Backend: 154 tests, no network (Ollama, Claude, Groq and Google are faked)
 cd email_manager_agent/backend && ../.venv/bin/python -m pytest -q
 
 # Frontend: 18 tests, typecheck and production build
@@ -184,7 +199,7 @@ Use a test email address you own.
 
 | Endpoint | Body | Returns |
 |---|---|---|
-| `GET /api/status?session_id=&check_bridge=` | none | Model (`llm`) and bridge configuration and issues, limits, the session's pending operations. `check_bridge=true` also pings Ollama and Google |
+| `GET /api/status?session_id=&check_bridge=` | none | Model (`llm`) and bridge configuration and issues, limits, the session's pending operations. `check_bridge=true` also pings the model provider and Google |
 | `POST /api/prompt` | `{"session_id"?: str, "prompt": str}` | `{session_id, reply, steps, stop_reason, tool_calls[], pending_operations[]}` |
 | `POST /api/confirm` | `{"session_id", "operation_id", "decision": "approve"\|"reject", "acknowledge_warnings"?: bool}` | `{status: executed\|rejected\|failed, message, result, pending_operations[]}` |
 | `POST /api/reset` | `{"session_id"?: str}` | `{session_id, status: "reset"}` |
@@ -213,11 +228,13 @@ Errors are always `{"error": {"code": "...", "message": "..."}}`, for example `v
 | *does not support tool calling* | Choose a tool-capable model (`qwen3`, `llama3.1`, `llama3.2`, `mistral-nemo`). |
 | *The local model did not answer within 600 seconds* | Use a smaller model, lower `OLLAMA_NUM_CTX`, set `OLLAMA_THINK=false`, or raise `OLLAMA_TIMEOUT_SECONDS`. |
 | The model gives poor answers or calls the wrong tool | Small local models are weaker at tool use. Try a larger model, be more specific, or use `LLM_PROVIDER=claude`. Writes still need your approval, so a wrong call can't do anything on its own. |
+| *The model API is rate limiting requests* | Groq's free tier limits requests and tokens per minute and per day. Wait a minute, or ask for fewer emails at once. |
+| *The model API rejected OPENAI_API_KEY* / *Model '…' was not found* | Check the key and `OPENAI_MODEL` against <https://console.groq.com/docs/models>, then restart the backend. |
 | *Claude is not configured* | With `LLM_PROVIDER=claude`: set `ANTHROPIC_API_KEY` and `CLAUDE_MODEL`, then restart the backend. |
 | *Claude model '…' was not found* | Fix `CLAUDE_MODEL`. |
 | *Claude rejected the request … fallbacks* | Set `CLAUDE_REFUSAL_FALLBACK=false`. |
 | *The Google bridge did not return JSON* | The Web App must be deployed with **Who has access: Anyone**, and the URL must end in `/exec`. |
-| *Invalid shared secret* / *not_configured* | Run `setupSharedSecret` again and copy the new value into `.env`. |
+| *Invalid shared secret* / *not_configured* | `APPS_SCRIPT_SHARED_SECRET` in `.env` and the `BRIDGE_SHARED_SECRET` script property must match exactly (no spaces or quotes). Run `checkSetup` to confirm it's set. |
 | *Google did not answer within 30 seconds* | Apps Script was slow. Try again, or raise `BRIDGE_TIMEOUT_SECONDS`. For a failed **write**, check Gmail/Calendar/Drive before retrying, because it may have gone through. |
 | *Google reported an error: … permission* | Re-authorize: run any function in the Apps Script editor. After changing scopes, deploy a new version. |
 | *This session no longer exists* | The backend restarted. Send your request again. |

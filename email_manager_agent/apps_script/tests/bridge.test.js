@@ -187,7 +187,7 @@ test('saveAttachments enforces the hard size cap', () => {
 
 test('there is no delete or trash operation', () => {
   const { context } = loadBridge();
-  const names = vm.runInContext('Object.keys(OPERATIONS_)', context);
+  const names = vm.runInContext('Object.keys(operations_())', context);
   assert.ok(names.every((n) => !/delete|trash|remove(?!Labels)/i.test(n)), names.join(','));
   const sources = ['Gmail.gs', 'Drive.gs'].map((f) => fs.readFileSync(path.join(__dirname, '..', f), 'utf8')).join('\n');
   assert.ok(!/moveToTrash|setTrashed|\.remove\(|Drive\.Files\.remove/.test(sources));

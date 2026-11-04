@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     )
 
     # --- Language model ---
-    llm_provider: Literal["ollama", "claude"] = "ollama"
+    llm_provider: Literal["ollama", "claude", "openai"] = "ollama"
 
     # --- Ollama (local models; used when LLM_PROVIDER=ollama) ---
     ollama_base_url: str = "http://127.0.0.1:11434"
@@ -42,6 +42,13 @@ class Settings(BaseSettings):
     claude_effort: str = "medium"  # low | medium | high | xhigh | max
     claude_refusal_fallback: bool = True  # server-side fallback when a request is declined
     claude_timeout_seconds: float = Field(120, gt=0)
+
+    # --- OpenAI-compatible API (used when LLM_PROVIDER=openai; defaults to Groq) ---
+    openai_base_url: str = "https://api.groq.com/openai/v1"
+    openai_api_key: SecretStr | None = None
+    openai_model: str | None = None  # required; must support tool calling, e.g. openai/gpt-oss-120b
+    openai_max_tokens: int = Field(4096, ge=256, le=32768)
+    openai_timeout_seconds: float = Field(120, gt=0)
 
     # --- Apps Script bridge ---
     apps_script_url: str | None = None
@@ -115,12 +122,18 @@ class Settings(BaseSettings):
 
     @property
     def active_model(self) -> str | None:
-        return self.ollama_model if self.llm_provider == "ollama" else self.claude_model
+        return {
+            "ollama": self.ollama_model,
+            "claude": self.claude_model,
+            "openai": self.openai_model,
+        }[self.llm_provider]
 
     def llm_config_issues(self) -> list[str]:
         """Human-readable problems that stop the agent from calling the configured model."""
         if self.llm_provider == "ollama":
             return self.ollama_config_issues()
+        if self.llm_provider == "openai":
+            return self.openai_config_issues()
         return self.claude_config_issues()
 
     def ollama_config_issues(self) -> list[str]:
@@ -129,6 +142,16 @@ class Settings(BaseSettings):
             issues.append("OLLAMA_MODEL is not set (for example OLLAMA_MODEL=qwen3:8b).")
         if not self.ollama_base_url.startswith(("http://", "https://")):
             issues.append("OLLAMA_BASE_URL must start with http:// or https://.")
+        return issues
+
+    def openai_config_issues(self) -> list[str]:
+        issues = []
+        if not self.openai_api_key or not self.openai_api_key.get_secret_value():
+            issues.append("OPENAI_API_KEY is not set (for Groq, create one at https://console.groq.com/keys).")
+        if not self.openai_model or not self.openai_model.strip():
+            issues.append("OPENAI_MODEL is not set (for example OPENAI_MODEL=openai/gpt-oss-120b).")
+        if not self.openai_base_url.startswith("https://"):
+            issues.append("OPENAI_BASE_URL must start with https://.")
         return issues
 
     def claude_config_issues(self) -> list[str]:
