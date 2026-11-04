@@ -5,9 +5,10 @@ requests in plain language ("find unread emails from today", "move my 3pm to Thu
 "save the invoice attachments to Drive"), a language model decides which tools to use, and
 **nothing is sent, scheduled or changed until you approve it** in the app.
 
-The model runs **locally with [Ollama](https://ollama.com)** by default (free, and your
-email text stays on your computer). You can switch to the Claude API with `LLM_PROVIDER=claude`, or to Groq's free tier (or any
-OpenAI-compatible API) with `LLM_PROVIDER=openai`. With either API, email text is sent to that provider.
+The model can be **Groq's free API** (`LLM_PROVIDER=openai`, what `.env.example` is set
+up for), **a local model with [Ollama](https://ollama.com)** (`LLM_PROVIDER=ollama`, the
+code default; email text stays on your computer), or the **Claude API**
+(`LLM_PROVIDER=claude`). With Groq or Claude, email text is sent to that provider.
 
 > The SRS v1.0 was not available when this was built. Values the SRS would normally fix
 > (step limits, timeouts, working hours, attachment size, …) are documented as **assumed**
@@ -56,9 +57,18 @@ email_manager_agent/
 ## Setup
 
 Requirements: **Python 3.10+**, **Node.js 18+** (20 or 22 recommended), a Google account,
-and **Ollama** (or an Anthropic API key if you choose Claude).
+and one model provider: a **Groq API key** (what `.env.example` is set up for), **Ollama**,
+or an Anthropic API key.
 
-### 0. Install Ollama and a model
+### 0. Choose a model provider
+
+**Groq (set up in `.env.example`, free, nothing to install):** create a key at
+<https://console.groq.com/keys> and put it in `.env` as `OPENAI_API_KEY`. Keep
+`OPENAI_MAX_TOKENS=2048`: the free tier allows 8,000 tokens per minute, and Groq counts the
+reply limit against it up front. Short rate limits are retried automatically, so some
+answers take up to ~30 seconds. Email content is sent to Groq.
+
+**Ollama (local, email stays on your computer):** set `LLM_PROVIDER=ollama` in `.env`, then:
 
 1. Install Ollama from <https://ollama.com/download> (Windows, macOS, Linux). It runs in the background on port 11434.
 2. Pull a model that **supports tool calling**:
