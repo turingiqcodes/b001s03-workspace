@@ -1,0 +1,42 @@
+{
+  "_comment": "Local development overrides. Runs fully offline with mock integrations (decision A5).",
+  "integration_mode": "mock",
+  "ai": {
+    "provider": "mock",
+    "_comment": "Smaller evidence limits so one analysis fits Groq's free tier (8,000 tokens per minute). AI_PROVIDER=groq in .env still selects Groq.",
+    "max_log_chars": 6000,
+    "max_source_chars": 6000,
+    "max_patch_chars": 3000,
+    "max_tokens": 2048
+  },
+  "analysis": {
+    "_comment": "One analysis at a time, so requests do not exceed Groq's per-minute limit.",
+    "worker_threads": 1
+  },
+  "polling": {
+    "interval_seconds": 15
+  },
+  "policy": {
+    "no_retry_dags": [
+      "finance_ledger_close"
+    ]
+  },
+  "logging": {
+    "level": "DEBUG"
+  },
+  "ownership": {
+    "_comment": "Sample mapping for the mock data: GitHub logins / DAG owners -> Linear users.",
+    "user_map": {
+      "alice-gh": "alice@example.com",
+      "alice": "alice@example.com",
+      "bob-gh": "bob@example.com",
+      "data-eng": "bob@example.com"
+    }
+  },
+  "approval": {
+    "_comment": "Mock mode only. In production set ONCALL_TRUSTED_APPROVERS.",
+    "trusted_approvers": [
+      "alice@example.com"
+    ]
+  }
+}

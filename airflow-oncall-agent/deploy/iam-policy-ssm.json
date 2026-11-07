@@ -1,0 +1,18 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ReadOncallAgentSecrets",
+      "Effect": "Allow",
+      "Action": ["ssm:GetParameters"],
+      "Resource": "arn:aws:ssm:eu-west-1:123456789012:parameter/oncall-agent/prod/*"
+    },
+    {
+      "Sid": "DecryptOncallAgentSecrets",
+      "Effect": "Allow",
+      "Action": ["kms:Decrypt"],
+      "Resource": "arn:aws:kms:eu-west-1:123456789012:key/REPLACE-WITH-KEY-ID",
+      "Condition": {"StringEquals": {"kms:ViaService": "ssm.eu-west-1.amazonaws.com"}}
+    }
+  ]
+}

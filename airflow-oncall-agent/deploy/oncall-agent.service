@@ -1,0 +1,33 @@
+# systemd unit for the Airflow Oncall Agent (assumption: systemd-based Linux; see docs/deployment.md).
+[Unit]
+Description=Airflow Oncall Agent
+Documentation=file:///opt/airflow-oncall-agent/README.md
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=oncall
+Group=oncall
+WorkingDirectory=/opt/airflow-oncall-agent
+# Non-secret settings only. Secrets come from SSM via ONCALL_SSM_PREFIX (never put them here).
+EnvironmentFile=/etc/oncall-agent/oncall-agent.env
+ExecStartPre=/opt/airflow-oncall-agent/.venv/bin/oncall-agent check
+ExecStart=/opt/airflow-oncall-agent/.venv/bin/oncall-agent run
+# SIGTERM: the agent finishes the current cycle, waits for running analyses, then exits.
+KillSignal=SIGTERM
+TimeoutStopSec=180
+Restart=on-failure
+RestartSec=30
+# Configuration errors (exit 3) will not fix themselves: do not restart-loop on them.
+RestartPreventExitStatus=3
+
+# Hardening
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/lib/oncall-agent /var/log/oncall-agent
+
+[Install]
+WantedBy=multi-user.target
