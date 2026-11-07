@@ -1,0 +1,13 @@
+{
+  "_comment": "Example MCP client configuration (e.g. Claude Code .mcp.json). Both servers use stdio and the agent's own configuration; writes stay disabled unless the ONCALL_MCP_ALLOW_* flags are set.",
+  "mcpServers": {
+    "oncall-airflow": {
+      "command": "/opt/airflow-oncall-agent/.venv/bin/oncall-airflow-mcp",
+      "env": {"ONCALL_ENV_FILE": "/etc/oncall-agent/oncall-agent.env"}
+    },
+    "oncall-linear": {
+      "command": "/opt/airflow-oncall-agent/.venv/bin/oncall-linear-mcp",
+      "env": {"ONCALL_ENV_FILE": "/etc/oncall-agent/oncall-agent.env"}
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "_comment": "Production overrides (no secrets). Real integrations are mandatory; secrets come from env or SSM.",
+  "integration_mode": "real",
+  "logging": {
+    "level": "INFO",
+    "format": "json"
+  }
+}
